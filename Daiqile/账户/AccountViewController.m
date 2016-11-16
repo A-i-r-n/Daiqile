@@ -10,6 +10,7 @@
 #import "AccountViewController.h"
 #import "UIButton+AirButton.h"
 #import "BtnView.h"
+#import "LoginViewController.h"
 
 @interface AccountViewController ()
 {
@@ -53,17 +54,30 @@
     _btnTitleArray = @[@"交易记录",@"我的投资",@"我的红包",@"绑定银行卡",@"我的推荐",@"安全中心"];
     _btnImgArray = @[@"icon_user_record",@"icon_user_invest",@"icon_user_redpackets",@"icon_user_card",@"icon_user_recommend",@"icon_user_safety"];
     
-    
     [self createUserBtn];
+    
+    [_headImgBtn addTarget:self action:@selector(headBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     
 
 }
 
-
+//前往登录界面
+- (void)headBtnClick:(UIButton *)button
+{
+    LoginViewController *login = [[LoginViewController alloc]init];
+    //[self.navigationController pushViewController:login animated:YES];
+    PUSH(login);
+}
 
 - (void)createUserBtn
 {
     BtnView *btnview = [[BtnView alloc]initWithBgViewFrame:CGRectMake(0, 15, _btnBgView.frame.size.width, _btnBgView.frame.size.height) withNubOfBtnInLine:3 withNubLine:2 withTopSpace:15.0f withleftSpace:20.0f withSpace:15.0f withTitleArray:_btnTitleArray withImageArray:_btnImgArray];
+    
+    for (int i = 0; i < 6; i++) {
+        UIButton *button = [btnview viewWithTag:10+i];
+        [button addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    
     [_btnBgView addSubview:btnview];
 
 }
@@ -74,16 +88,21 @@
         case 10:
         {
             //交易记录
+            NSLog(@"交易记录");
         }
             break;
         case 11:
         {
             //我的投资
+            NSLog(@"我的投资");
+
         }
             break;
         case 12:
         {
             //我的红包
+            NSLog(@"我的红包");
+
         }
             break;
         case 13:

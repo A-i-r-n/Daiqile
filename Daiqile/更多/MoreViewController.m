@@ -8,6 +8,8 @@
 
 #import "MoreViewController.h"
 #import "MoreTableViewCell.h"
+#import "LogoView.h"
+#import "PlatformStateViewController.h"
 
 @interface MoreViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -79,31 +81,7 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     if (section == 0) {
-        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 100)];
-        view.backgroundColor = [UIColor clearColor];
-        
-        UIImageView *img = [[UIImageView alloc]init];
-        img.image = [UIImage imageNamed:@"logo"];
-        
-        [view addSubview:img];
-        
-        UILabel *design = [[UILabel alloc]init];
-        design.text = @"安全,透明,便捷,值得投资";
-        design.textColor = GoldColor;
-        [view addSubview:design];
-        
-        [img mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.offset(10);
-            make.centerX.equalTo(view.mas_centerX);
-            make.width.offset(60);
-            make.height.offset(60);
-        }];
-        
-        [design mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(img.mas_bottom).offset(5);
-            make.centerX.equalTo(img.mas_centerX);
-        }];
-        
+        LogoView *view = [[LogoView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 100)];
         return view;
     }
     return nil;
@@ -112,7 +90,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 70;
+    return Ratio(70);
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -123,12 +101,16 @@
     }
     cell.img.image = [UIImage imageNamed:_imgArray[indexPath.section]] ;
     cell.title.text = _titleArray[indexPath.section];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    if (indexPath.section == 2) {
+        PlatformStateViewController *state = [[PlatformStateViewController alloc]init];
+        PUSH(state);
+    }
 }
 
 @end

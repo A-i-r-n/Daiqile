@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="365" height="62"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v8z-6C-Hlr">
+                    <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v8z-6C-Hlr">
                         <rect key="frame" x="20" y="0.0" width="325" height="63"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more_help" translatesAutoresizingMaskIntoConstraints="NO" id="9Jk-vw-Pv0">
@@ -42,7 +42,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1764705882" alpha="0.59625771599999999" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="9Jk-vw-Pv0" firstAttribute="centerY" secondItem="v8z-6C-Hlr" secondAttribute="centerY" id="DP3-iY-xQL"/>
                             <constraint firstItem="D4L-7g-E27" firstAttribute="centerY" secondItem="9Jk-vw-Pv0" secondAttribute="centerY" id="FH9-lo-XSv"/>

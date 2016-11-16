@@ -18,10 +18,10 @@
             <rect key="frame" x="0.0" y="0.0" width="489" height="150"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="489" height="149.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="489" height="149"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIb-bk-tYn">
+                    <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIb-bk-tYn">
                         <rect key="frame" x="8" y="0.0" width="473" height="149.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="信用标   2016090902" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huB-QB-O1Z">
@@ -64,7 +64,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akl-1X-eA4">
                                                 <rect key="frame" x="80" y="15" width="29" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -118,7 +118,7 @@
                                 <color key="trackTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
                         </subviews>
-                        <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1764705882" alpha="0.21149209099999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1764705882" alpha="0.59625771599999999" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="L28-gD-XyD" secondAttribute="bottom" constant="1" id="3wA-Me-FwB"/>
                             <constraint firstItem="huB-QB-O1Z" firstAttribute="top" secondItem="yIb-bk-tYn" secondAttribute="top" constant="8" id="8BV-DT-eua"/>
@@ -148,7 +148,9 @@
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
+                <outlet property="complateImg" destination="fHs-vm-IfC" id="7zN-9M-buw"/>
                 <outlet property="investName" destination="huB-QB-O1Z" id="SVn-Gb-gQk"/>
+                <outlet property="littleImg" destination="utP-2F-KoT" id="3GV-Gd-DQi"/>
                 <outlet property="monthNub" destination="tLO-g5-pea" id="Feh-Yq-2o7"/>
                 <outlet property="progress" destination="P3M-hT-aI2" id="zay-vI-rlp"/>
                 <outlet property="progressView" destination="L28-gD-XyD" id="nzW-pD-UZS"/>

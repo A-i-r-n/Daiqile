@@ -35,6 +35,16 @@
 		BC7988B31DDBF84E00433105 /* BtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7988B21DDBF84E00433105 /* BtnView.m */; };
 		BC7988B71DDC053500433105 /* MoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7988B51DDC053400433105 /* MoreTableViewCell.m */; };
 		BC7988B81DDC053500433105 /* MoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC7988B61DDC053400433105 /* MoreTableViewCell.xib */; };
+		BC7988C81DDC2C0F00433105 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7988C61DDC2C0F00433105 /* LoginViewController.m */; };
+		BC7988C91DDC2C0F00433105 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC7988C71DDC2C0F00433105 /* LoginViewController.xib */; };
+		BC7988CD1DDC2C2900433105 /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7988CB1DDC2C2900433105 /* RegistViewController.m */; };
+		BC7988CE1DDC2C2900433105 /* RegistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC7988CC1DDC2C2900433105 /* RegistViewController.xib */; };
+		BC7988D11DDC30E000433105 /* LogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7988D01DDC30E000433105 /* LogoView.m */; };
+		BC7988D41DDC3CB100433105 /* AirTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7988D31DDC3CB100433105 /* AirTextField.m */; };
+		BC7988D91DDC4C9300433105 /* PlatformStateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7988D71DDC4C9300433105 /* PlatformStateViewController.m */; };
+		BC7988DA1DDC4C9300433105 /* PlatformStateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC7988D81DDC4C9300433105 /* PlatformStateViewController.xib */; };
+		BC7988DE1DDC4D4800433105 /* PlatformStateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7988DC1DDC4D4800433105 /* PlatformStateTableViewCell.m */; };
+		BC7988DF1DDC4D4800433105 /* PlatformStateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC7988DD1DDC4D4800433105 /* PlatformStateTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +115,22 @@
 		BC7988B41DDC053400433105 /* MoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreTableViewCell.h; sourceTree = "<group>"; };
 		BC7988B51DDC053400433105 /* MoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreTableViewCell.m; sourceTree = "<group>"; };
 		BC7988B61DDC053400433105 /* MoreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreTableViewCell.xib; sourceTree = "<group>"; };
+		BC7988C51DDC2C0F00433105 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		BC7988C61DDC2C0F00433105 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		BC7988C71DDC2C0F00433105 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		BC7988CA1DDC2C2900433105 /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
+		BC7988CB1DDC2C2900433105 /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
+		BC7988CC1DDC2C2900433105 /* RegistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistViewController.xib; sourceTree = "<group>"; };
+		BC7988CF1DDC30E000433105 /* LogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoView.h; sourceTree = "<group>"; };
+		BC7988D01DDC30E000433105 /* LogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoView.m; sourceTree = "<group>"; };
+		BC7988D21DDC3CB100433105 /* AirTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirTextField.h; sourceTree = "<group>"; };
+		BC7988D31DDC3CB100433105 /* AirTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirTextField.m; sourceTree = "<group>"; };
+		BC7988D61DDC4C9300433105 /* PlatformStateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformStateViewController.h; sourceTree = "<group>"; };
+		BC7988D71DDC4C9300433105 /* PlatformStateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformStateViewController.m; sourceTree = "<group>"; };
+		BC7988D81DDC4C9300433105 /* PlatformStateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlatformStateViewController.xib; sourceTree = "<group>"; };
+		BC7988DB1DDC4D4800433105 /* PlatformStateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformStateTableViewCell.h; sourceTree = "<group>"; };
+		BC7988DC1DDC4D4800433105 /* PlatformStateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformStateTableViewCell.m; sourceTree = "<group>"; };
+		BC7988DD1DDC4D4800433105 /* PlatformStateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlatformStateTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +282,7 @@
 		BC10FE021DD95FAE007414D3 /* 更多 */ = {
 			isa = PBXGroup;
 			children = (
+				BC7988D51DDC4C3D00433105 /* 平台动态 */,
 				BC4852F21DD9674C0045A205 /* MoreViewController.h */,
 				BC4852F31DD9674C0045A205 /* MoreViewController.m */,
 				BC4852F41DD9674C0045A205 /* MoreViewController.xib */,
@@ -266,6 +293,8 @@
 		BC10FE031DD95FAE007414D3 /* 账户 */ = {
 			isa = PBXGroup;
 			children = (
+				BC7988B91DDC2B7000433105 /* 登录 */,
+				BC7988BA1DDC2B7000433105 /* 注册 */,
 				BC4852F71DD967650045A205 /* AccountViewController.h */,
 				BC4852F81DD967650045A205 /* AccountViewController.m */,
 				BC4852F91DD967650045A205 /* AccountViewController.xib */,
@@ -293,11 +322,48 @@
 				BC7988AF1DDBED8B00433105 /* UIButton+AirButton.m */,
 				BC7988B11DDBF84E00433105 /* BtnView.h */,
 				BC7988B21DDBF84E00433105 /* BtnView.m */,
+				BC7988CF1DDC30E000433105 /* LogoView.h */,
+				BC7988D01DDC30E000433105 /* LogoView.m */,
 				BC7988B41DDC053400433105 /* MoreTableViewCell.h */,
 				BC7988B51DDC053400433105 /* MoreTableViewCell.m */,
 				BC7988B61DDC053400433105 /* MoreTableViewCell.xib */,
+				BC7988D21DDC3CB100433105 /* AirTextField.h */,
+				BC7988D31DDC3CB100433105 /* AirTextField.m */,
+				BC7988DB1DDC4D4800433105 /* PlatformStateTableViewCell.h */,
+				BC7988DC1DDC4D4800433105 /* PlatformStateTableViewCell.m */,
+				BC7988DD1DDC4D4800433105 /* PlatformStateTableViewCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BC7988B91DDC2B7000433105 /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				BC7988C51DDC2C0F00433105 /* LoginViewController.h */,
+				BC7988C61DDC2C0F00433105 /* LoginViewController.m */,
+				BC7988C71DDC2C0F00433105 /* LoginViewController.xib */,
+			);
+			path = "登录";
+			sourceTree = "<group>";
+		};
+		BC7988BA1DDC2B7000433105 /* 注册 */ = {
+			isa = PBXGroup;
+			children = (
+				BC7988CA1DDC2C2900433105 /* RegistViewController.h */,
+				BC7988CB1DDC2C2900433105 /* RegistViewController.m */,
+				BC7988CC1DDC2C2900433105 /* RegistViewController.xib */,
+			);
+			path = "注册";
+			sourceTree = "<group>";
+		};
+		BC7988D51DDC4C3D00433105 /* 平台动态 */ = {
+			isa = PBXGroup;
+			children = (
+				BC7988D61DDC4C9300433105 /* PlatformStateViewController.h */,
+				BC7988D71DDC4C9300433105 /* PlatformStateViewController.m */,
+				BC7988D81DDC4C9300433105 /* PlatformStateViewController.xib */,
+			);
+			path = "平台动态";
 			sourceTree = "<group>";
 		};
 		D01784F8CE3108B6E03021EC /* Pods */ = {
@@ -419,15 +485,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC7988DA1DDC4C9300433105 /* PlatformStateViewController.xib in Resources */,
 				BC10FDCF1DD9532A007414D3 /* LaunchScreen.storyboard in Resources */,
 				BC4852F61DD9674C0045A205 /* MoreViewController.xib in Resources */,
 				BC4853011DDAB6010045A205 /* InvestTableViewCell.xib in Resources */,
 				BC4852F11DD967360045A205 /* InvestViewController.xib in Resources */,
 				BC4852EC1DD967200045A205 /* MainViewController.xib in Resources */,
+				BC7988DF1DDC4D4800433105 /* PlatformStateTableViewCell.xib in Resources */,
 				BC10FDCC1DD9532A007414D3 /* Assets.xcassets in Resources */,
 				BC7988B81DDC053500433105 /* MoreTableViewCell.xib in Resources */,
 				BC10FDC71DD9532A007414D3 /* Main.storyboard in Resources */,
+				BC7988C91DDC2C0F00433105 /* LoginViewController.xib in Resources */,
 				BC4852FB1DD967650045A205 /* AccountViewController.xib in Resources */,
+				BC7988CE1DDC2C2900433105 /* RegistViewController.xib in Resources */,
 				BC4852E71DD965C10045A205 /* SuperViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,14 +576,20 @@
 				BC7988B01DDBED8B00433105 /* UIButton+AirButton.m in Sources */,
 				BC10FDC41DD9532A007414D3 /* ViewController.m in Sources */,
 				BC10FDCA1DD9532A007414D3 /* Daiqile.xcdatamodeld in Sources */,
+				BC7988D91DDC4C9300433105 /* PlatformStateViewController.m in Sources */,
 				BC4853001DDAB6010045A205 /* InvestTableViewCell.m in Sources */,
+				BC7988CD1DDC2C2900433105 /* RegistViewController.m in Sources */,
+				BC7988C81DDC2C0F00433105 /* LoginViewController.m in Sources */,
 				BC10FDFD1DD95E1F007414D3 /* AirNavigationController.m in Sources */,
+				BC7988D11DDC30E000433105 /* LogoView.m in Sources */,
 				BC7988B71DDC053500433105 /* MoreTableViewCell.m in Sources */,
 				BC7988B31DDBF84E00433105 /* BtnView.m in Sources */,
 				BC4852FA1DD967650045A205 /* AccountViewController.m in Sources */,
 				BC4852F01DD967360045A205 /* InvestViewController.m in Sources */,
 				BC10FDC11DD9532A007414D3 /* AppDelegate.m in Sources */,
+				BC7988D41DDC3CB100433105 /* AirTextField.m in Sources */,
 				BC10FDFA1DD95D05007414D3 /* AirTabBarController.m in Sources */,
+				BC7988DE1DDC4D4800433105 /* PlatformStateTableViewCell.m in Sources */,
 				BC4852F51DD9674C0045A205 /* MoreViewController.m in Sources */,
 				BC10FDBE1DD9532A007414D3 /* main.m in Sources */,
 			);
