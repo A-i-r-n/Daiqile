@@ -32,6 +32,9 @@
 		BC4853001DDAB6010045A205 /* InvestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4852FE1DDAB6010045A205 /* InvestTableViewCell.m */; };
 		BC4853011DDAB6010045A205 /* InvestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4852FF1DDAB6010045A205 /* InvestTableViewCell.xib */; };
 		BC7988B01DDBED8B00433105 /* UIButton+AirButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7988AF1DDBED8B00433105 /* UIButton+AirButton.m */; };
+		BC7988B31DDBF84E00433105 /* BtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7988B21DDBF84E00433105 /* BtnView.m */; };
+		BC7988B71DDC053500433105 /* MoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7988B51DDC053400433105 /* MoreTableViewCell.m */; };
+		BC7988B81DDC053500433105 /* MoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC7988B61DDC053400433105 /* MoreTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +100,11 @@
 		BC4852FF1DDAB6010045A205 /* InvestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestTableViewCell.xib; sourceTree = "<group>"; };
 		BC7988AE1DDBED8B00433105 /* UIButton+AirButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AirButton.h"; sourceTree = "<group>"; };
 		BC7988AF1DDBED8B00433105 /* UIButton+AirButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AirButton.m"; sourceTree = "<group>"; };
+		BC7988B11DDBF84E00433105 /* BtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BtnView.h; sourceTree = "<group>"; };
+		BC7988B21DDBF84E00433105 /* BtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BtnView.m; sourceTree = "<group>"; };
+		BC7988B41DDC053400433105 /* MoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreTableViewCell.h; sourceTree = "<group>"; };
+		BC7988B51DDC053400433105 /* MoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreTableViewCell.m; sourceTree = "<group>"; };
+		BC7988B61DDC053400433105 /* MoreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +291,11 @@
 				BC4852FF1DDAB6010045A205 /* InvestTableViewCell.xib */,
 				BC7988AE1DDBED8B00433105 /* UIButton+AirButton.h */,
 				BC7988AF1DDBED8B00433105 /* UIButton+AirButton.m */,
+				BC7988B11DDBF84E00433105 /* BtnView.h */,
+				BC7988B21DDBF84E00433105 /* BtnView.m */,
+				BC7988B41DDC053400433105 /* MoreTableViewCell.h */,
+				BC7988B51DDC053400433105 /* MoreTableViewCell.m */,
+				BC7988B61DDC053400433105 /* MoreTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -412,6 +425,7 @@
 				BC4852F11DD967360045A205 /* InvestViewController.xib in Resources */,
 				BC4852EC1DD967200045A205 /* MainViewController.xib in Resources */,
 				BC10FDCC1DD9532A007414D3 /* Assets.xcassets in Resources */,
+				BC7988B81DDC053500433105 /* MoreTableViewCell.xib in Resources */,
 				BC10FDC71DD9532A007414D3 /* Main.storyboard in Resources */,
 				BC4852FB1DD967650045A205 /* AccountViewController.xib in Resources */,
 				BC4852E71DD965C10045A205 /* SuperViewController.xib in Resources */,
@@ -494,6 +508,8 @@
 				BC10FDCA1DD9532A007414D3 /* Daiqile.xcdatamodeld in Sources */,
 				BC4853001DDAB6010045A205 /* InvestTableViewCell.m in Sources */,
 				BC10FDFD1DD95E1F007414D3 /* AirNavigationController.m in Sources */,
+				BC7988B71DDC053500433105 /* MoreTableViewCell.m in Sources */,
+				BC7988B31DDBF84E00433105 /* BtnView.m in Sources */,
 				BC4852FA1DD967650045A205 /* AccountViewController.m in Sources */,
 				BC4852F01DD967360045A205 /* InvestViewController.m in Sources */,
 				BC10FDC11DD9532A007414D3 /* AppDelegate.m in Sources */,

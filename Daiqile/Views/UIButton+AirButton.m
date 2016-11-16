@@ -11,11 +11,8 @@
 @implementation UIButton (AirButton)
 - (void)verticalImageAndTitle:(CGFloat)spacing
 {
-    self.titleLabel.backgroundColor = [UIColor greenColor];
     CGSize imageSize = self.imageView.frame.size;
     CGSize titleSize = self.titleLabel.frame.size;
-    //CGSize textSize = [self.titleLabel.text sizeWithFont:self.titleLabel.font];
-    
     CGSize textSize = [self.titleLabel.text sizeWithAttributes:@{NSFontAttributeName : self.titleLabel.font}];
     
     CGSize frameSize = CGSizeMake(ceilf(textSize.width), ceilf(textSize.height));

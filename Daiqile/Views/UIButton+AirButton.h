@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UIButton (AirButton)
-
+- (void)verticalImageAndTitle:(CGFloat)spacing;
 @end

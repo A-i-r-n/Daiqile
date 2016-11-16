@@ -21,7 +21,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="130" y="-628"/>
+            <point key="canvasLocation" x="129.5" y="-628.5"/>
         </view>
     </objects>
 </document>

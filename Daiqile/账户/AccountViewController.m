@@ -8,10 +8,16 @@
 //
 
 #import "AccountViewController.h"
+#import "UIButton+AirButton.h"
+#import "BtnView.h"
 
 @interface AccountViewController ()
 {
     UIScrollView *scrollView;
+    NSArray *_btnTitleArray;
+    NSArray *_btnImgArray;
+    
+    
 }
 @property (strong, nonatomic) IBOutlet UIButton *headImgBtn;//选择头像按钮
 @property (strong, nonatomic) IBOutlet UILabel *userName;//用户名
@@ -23,12 +29,15 @@
 @property (strong, nonatomic) IBOutlet UIButton *recharge;//充值
 @property (strong, nonatomic) IBOutlet UIButton *getMoney;//提现
 
-@property (strong, nonatomic) IBOutlet UIButton *tradeRecord;//交易记录
-@property (strong, nonatomic) IBOutlet UIButton *myInvest;//我的投资
-@property (strong, nonatomic) IBOutlet UIButton *myRedpackets;//我的红包
-@property (strong, nonatomic) IBOutlet UIButton *myCard;//绑定银行卡
-@property (strong, nonatomic) IBOutlet UIButton *myrecommend;//我的推荐
-@property (strong, nonatomic) IBOutlet UIButton *safity;//安全中心
+
+@property (strong, nonatomic) IBOutlet UIView *btnBgView;//按钮的背景view
+
+//@property (strong, nonatomic) UIButton *tradeRecord;//交易记录
+//@property (strong, nonatomic) UIButton *myInvest;//我的投资
+//@property (strong, nonatomic) UIButton *myRedpackets;//我的红包
+//@property (strong, nonatomic) UIButton *myCard;//绑定银行卡
+//@property (strong, nonatomic) UIButton *myrecommend;//我的推荐
+//@property (strong, nonatomic) UIButton *safity;//安全中心
 
 
 
@@ -41,26 +50,60 @@
     // Do any additional setup after loading the view from its nib.
     self.navigationItem.title = @"账户";
     
+    _btnTitleArray = @[@"交易记录",@"我的投资",@"我的红包",@"绑定银行卡",@"我的推荐",@"安全中心"];
+    _btnImgArray = @[@"icon_user_record",@"icon_user_invest",@"icon_user_redpackets",@"icon_user_card",@"icon_user_recommend",@"icon_user_safety"];
     
     
+    [self createUserBtn];
+    
 
 }
 
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)createUserBtn
+{
+    BtnView *btnview = [[BtnView alloc]initWithBgViewFrame:CGRectMake(0, 15, _btnBgView.frame.size.width, _btnBgView.frame.size.height) withNubOfBtnInLine:3 withNubLine:2 withTopSpace:15.0f withleftSpace:20.0f withSpace:15.0f withTitleArray:_btnTitleArray withImageArray:_btnImgArray];
+    [_btnBgView addSubview:btnview];
+
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)btnClick:(UIButton *)button
+{
+    switch (button.tag) {
+        case 10:
+        {
+            //交易记录
+        }
+            break;
+        case 11:
+        {
+            //我的投资
+        }
+            break;
+        case 12:
+        {
+            //我的红包
+        }
+            break;
+        case 13:
+        {
+            //绑定银行卡
+        }
+            break;
+        case 14:
+        {
+            //我的推荐
+        }
+            break;
+        
+        default:
+        {
+            //安全中心
+        }
+            break;
+    }
 }
-*/
+
 
 @end
