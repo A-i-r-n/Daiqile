@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58495B45A7BC3E67EDDD32FF /* libPods-Daiqile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BD327A6DDA3572CA7884C8 /* libPods-Daiqile.a */; };
+		BC10FDBE1DD9532A007414D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC10FDBD1DD9532A007414D3 /* main.m */; };
+		BC10FDC11DD9532A007414D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC10FDC01DD9532A007414D3 /* AppDelegate.m */; };
+		BC10FDC41DD9532A007414D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC10FDC31DD9532A007414D3 /* ViewController.m */; };
+		BC10FDC71DD9532A007414D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC10FDC51DD9532A007414D3 /* Main.storyboard */; };
+		BC10FDCA1DD9532A007414D3 /* Daiqile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC10FDC81DD9532A007414D3 /* Daiqile.xcdatamodeld */; };
+		BC10FDCC1DD9532A007414D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC10FDCB1DD9532A007414D3 /* Assets.xcassets */; };
+		BC10FDCF1DD9532A007414D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC10FDCD1DD9532A007414D3 /* LaunchScreen.storyboard */; };
+		BC10FDDA1DD9532A007414D3 /* DaiqileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC10FDD91DD9532A007414D3 /* DaiqileTests.m */; };
+		BC10FDE51DD9532A007414D3 /* DaiqileUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC10FDE41DD9532A007414D3 /* DaiqileUITests.m */; };
+		BC10FDFA1DD95D05007414D3 /* AirTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC10FDF91DD95D05007414D3 /* AirTabBarController.m */; };
+		BC10FDFD1DD95E1F007414D3 /* AirNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC10FDFC1DD95E1F007414D3 /* AirNavigationController.m */; };
+		BC4852E61DD965C10045A205 /* SuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4852E41DD965C10045A205 /* SuperViewController.m */; };
+		BC4852E71DD965C10045A205 /* SuperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4852E51DD965C10045A205 /* SuperViewController.xib */; };
+		BC4852EB1DD967200045A205 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4852E91DD967200045A205 /* MainViewController.m */; };
+		BC4852EC1DD967200045A205 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4852EA1DD967200045A205 /* MainViewController.xib */; };
+		BC4852F01DD967360045A205 /* InvestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4852EE1DD967360045A205 /* InvestViewController.m */; };
+		BC4852F11DD967360045A205 /* InvestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4852EF1DD967360045A205 /* InvestViewController.xib */; };
+		BC4852F51DD9674C0045A205 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4852F31DD9674C0045A205 /* MoreViewController.m */; };
+		BC4852F61DD9674C0045A205 /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4852F41DD9674C0045A205 /* MoreViewController.xib */; };
+		BC4852FA1DD967650045A205 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4852F81DD967650045A205 /* AccountViewController.m */; };
+		BC4852FB1DD967650045A205 /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4852F91DD967650045A205 /* AccountViewController.xib */; };
+		BC4853001DDAB6010045A205 /* InvestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4852FE1DDAB6010045A205 /* InvestTableViewCell.m */; };
+		BC4853011DDAB6010045A205 /* InvestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4852FF1DDAB6010045A205 /* InvestTableViewCell.xib */; };
+		BC7988B01DDBED8B00433105 /* UIButton+AirButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7988AF1DDBED8B00433105 /* UIButton+AirButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC10FDD61DD9532A007414D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC10FDB11DD9532A007414D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC10FDB81DD9532A007414D3;
+			remoteInfo = Daiqile;
+		};
+		BC10FDE11DD9532A007414D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC10FDB11DD9532A007414D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC10FDB81DD9532A007414D3;
+			remoteInfo = Daiqile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11706F54FDE579504F648956 /* Pods-Daiqile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daiqile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Daiqile/Pods-Daiqile.debug.xcconfig"; sourceTree = "<group>"; };
+		28CE14A381CD2705E0E4E010 /* Pods-Daiqile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daiqile.release.xcconfig"; path = "Pods/Target Support Files/Pods-Daiqile/Pods-Daiqile.release.xcconfig"; sourceTree = "<group>"; };
+		84BD327A6DDA3572CA7884C8 /* libPods-Daiqile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Daiqile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC10FDB91DD9532A007414D3 /* Daiqile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daiqile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC10FDBD1DD9532A007414D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC10FDBF1DD9532A007414D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BC10FDC01DD9532A007414D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BC10FDC21DD9532A007414D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BC10FDC31DD9532A007414D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BC10FDC61DD9532A007414D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC10FDC91DD9532A007414D3 /* Daiqile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Daiqile.xcdatamodel; sourceTree = "<group>"; };
+		BC10FDCB1DD9532A007414D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC10FDCE1DD9532A007414D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC10FDD01DD9532A007414D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC10FDD51DD9532A007414D3 /* DaiqileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaiqileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC10FDD91DD9532A007414D3 /* DaiqileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DaiqileTests.m; sourceTree = "<group>"; };
+		BC10FDDB1DD9532A007414D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC10FDE01DD9532A007414D3 /* DaiqileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaiqileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC10FDE41DD9532A007414D3 /* DaiqileUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DaiqileUITests.m; sourceTree = "<group>"; };
+		BC10FDE61DD9532A007414D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC10FDF81DD95D05007414D3 /* AirTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirTabBarController.h; sourceTree = "<group>"; };
+		BC10FDF91DD95D05007414D3 /* AirTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirTabBarController.m; sourceTree = "<group>"; };
+		BC10FDFB1DD95E1F007414D3 /* AirNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirNavigationController.h; sourceTree = "<group>"; };
+		BC10FDFC1DD95E1F007414D3 /* AirNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirNavigationController.m; sourceTree = "<group>"; };
+		BC10FDFF1DD95ED3007414D3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BC4852E31DD965C10045A205 /* SuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperViewController.h; sourceTree = "<group>"; };
+		BC4852E41DD965C10045A205 /* SuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperViewController.m; sourceTree = "<group>"; };
+		BC4852E51DD965C10045A205 /* SuperViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuperViewController.xib; sourceTree = "<group>"; };
+		BC4852E81DD967200045A205 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		BC4852E91DD967200045A205 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		BC4852EA1DD967200045A205 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		BC4852ED1DD967360045A205 /* InvestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvestViewController.h; sourceTree = "<group>"; };
+		BC4852EE1DD967360045A205 /* InvestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvestViewController.m; sourceTree = "<group>"; };
+		BC4852EF1DD967360045A205 /* InvestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestViewController.xib; sourceTree = "<group>"; };
+		BC4852F21DD9674C0045A205 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		BC4852F31DD9674C0045A205 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		BC4852F41DD9674C0045A205 /* MoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
+		BC4852F71DD967650045A205 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		BC4852F81DD967650045A205 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		BC4852F91DD967650045A205 /* AccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
+		BC4852FD1DDAB6010045A205 /* InvestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvestTableViewCell.h; sourceTree = "<group>"; };
+		BC4852FE1DDAB6010045A205 /* InvestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvestTableViewCell.m; sourceTree = "<group>"; };
+		BC4852FF1DDAB6010045A205 /* InvestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestTableViewCell.xib; sourceTree = "<group>"; };
+		BC7988AE1DDBED8B00433105 /* UIButton+AirButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AirButton.h"; sourceTree = "<group>"; };
+		BC7988AF1DDBED8B00433105 /* UIButton+AirButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AirButton.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC10FDB61DD9532A007414D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58495B45A7BC3E67EDDD32FF /* libPods-Daiqile.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC10FDD21DD9532A007414D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC10FDDD1DD9532A007414D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DF0A70F7EF778D95210EFAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84BD327A6DDA3572CA7884C8 /* libPods-Daiqile.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC10FDB01DD9532A007414D3 = {
+			isa = PBXGroup;
+			children = (
+				BC10FDBB1DD9532A007414D3 /* Daiqile */,
+				BC10FDD81DD9532A007414D3 /* DaiqileTests */,
+				BC10FDE31DD9532A007414D3 /* DaiqileUITests */,
+				BC10FDBA1DD9532A007414D3 /* Products */,
+				D01784F8CE3108B6E03021EC /* Pods */,
+				1DF0A70F7EF778D95210EFAD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC10FDBA1DD9532A007414D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC10FDB91DD9532A007414D3 /* Daiqile.app */,
+				BC10FDD51DD9532A007414D3 /* DaiqileTests.xctest */,
+				BC10FDE01DD9532A007414D3 /* DaiqileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC10FDBB1DD9532A007414D3 /* Daiqile */ = {
+			isa = PBXGroup;
+			children = (
+				BC4852FC1DDAB5B40045A205 /* Views */,
+				BC4852E21DD965B00045A205 /* 父视图 */,
+				BC10FE001DD95FAE007414D3 /* 首页 */,
+				BC10FE011DD95FAE007414D3 /* 投资 */,
+				BC10FE031DD95FAE007414D3 /* 账户 */,
+				BC10FE021DD95FAE007414D3 /* 更多 */,
+				BC10FDF21DD953DE007414D3 /* TabBar */,
+				BC10FDFE1DD95EA1007414D3 /* Other */,
+				BC10FDBC1DD9532A007414D3 /* Supporting Files */,
+			);
+			path = Daiqile;
+			sourceTree = "<group>";
+		};
+		BC10FDBC1DD9532A007414D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC10FDBD1DD9532A007414D3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC10FDD81DD9532A007414D3 /* DaiqileTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC10FDD91DD9532A007414D3 /* DaiqileTests.m */,
+				BC10FDDB1DD9532A007414D3 /* Info.plist */,
+			);
+			path = DaiqileTests;
+			sourceTree = "<group>";
+		};
+		BC10FDE31DD9532A007414D3 /* DaiqileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC10FDE41DD9532A007414D3 /* DaiqileUITests.m */,
+				BC10FDE61DD9532A007414D3 /* Info.plist */,
+			);
+			path = DaiqileUITests;
+			sourceTree = "<group>";
+		};
+		BC10FDF21DD953DE007414D3 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				BC10FDF81DD95D05007414D3 /* AirTabBarController.h */,
+				BC10FDF91DD95D05007414D3 /* AirTabBarController.m */,
+				BC10FDFB1DD95E1F007414D3 /* AirNavigationController.h */,
+				BC10FDFC1DD95E1F007414D3 /* AirNavigationController.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		BC10FDFE1DD95EA1007414D3 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				BC10FDBF1DD9532A007414D3 /* AppDelegate.h */,
+				BC10FDC01DD9532A007414D3 /* AppDelegate.m */,
+				BC10FDC21DD9532A007414D3 /* ViewController.h */,
+				BC10FDC31DD9532A007414D3 /* ViewController.m */,
+				BC10FDFF1DD95ED3007414D3 /* PrefixHeader.pch */,
+				BC10FDC51DD9532A007414D3 /* Main.storyboard */,
+				BC10FDCB1DD9532A007414D3 /* Assets.xcassets */,
+				BC10FDCD1DD9532A007414D3 /* LaunchScreen.storyboard */,
+				BC10FDD01DD9532A007414D3 /* Info.plist */,
+				BC10FDC81DD9532A007414D3 /* Daiqile.xcdatamodeld */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		BC10FE001DD95FAE007414D3 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				BC4852E81DD967200045A205 /* MainViewController.h */,
+				BC4852E91DD967200045A205 /* MainViewController.m */,
+				BC4852EA1DD967200045A205 /* MainViewController.xib */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		BC10FE011DD95FAE007414D3 /* 投资 */ = {
+			isa = PBXGroup;
+			children = (
+				BC4852ED1DD967360045A205 /* InvestViewController.h */,
+				BC4852EE1DD967360045A205 /* InvestViewController.m */,
+				BC4852EF1DD967360045A205 /* InvestViewController.xib */,
+			);
+			path = "投资";
+			sourceTree = "<group>";
+		};
+		BC10FE021DD95FAE007414D3 /* 更多 */ = {
+			isa = PBXGroup;
+			children = (
+				BC4852F21DD9674C0045A205 /* MoreViewController.h */,
+				BC4852F31DD9674C0045A205 /* MoreViewController.m */,
+				BC4852F41DD9674C0045A205 /* MoreViewController.xib */,
+			);
+			path = "更多";
+			sourceTree = "<group>";
+		};
+		BC10FE031DD95FAE007414D3 /* 账户 */ = {
+			isa = PBXGroup;
+			children = (
+				BC4852F71DD967650045A205 /* AccountViewController.h */,
+				BC4852F81DD967650045A205 /* AccountViewController.m */,
+				BC4852F91DD967650045A205 /* AccountViewController.xib */,
+			);
+			path = "账户";
+			sourceTree = "<group>";
+		};
+		BC4852E21DD965B00045A205 /* 父视图 */ = {
+			isa = PBXGroup;
+			children = (
+				BC4852E31DD965C10045A205 /* SuperViewController.h */,
+				BC4852E41DD965C10045A205 /* SuperViewController.m */,
+				BC4852E51DD965C10045A205 /* SuperViewController.xib */,
+			);
+			path = "父视图";
+			sourceTree = "<group>";
+		};
+		BC4852FC1DDAB5B40045A205 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC4852FD1DDAB6010045A205 /* InvestTableViewCell.h */,
+				BC4852FE1DDAB6010045A205 /* InvestTableViewCell.m */,
+				BC4852FF1DDAB6010045A205 /* InvestTableViewCell.xib */,
+				BC7988AE1DDBED8B00433105 /* UIButton+AirButton.h */,
+				BC7988AF1DDBED8B00433105 /* UIButton+AirButton.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D01784F8CE3108B6E03021EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11706F54FDE579504F648956 /* Pods-Daiqile.debug.xcconfig */,
+				28CE14A381CD2705E0E4E010 /* Pods-Daiqile.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC10FDB81DD9532A007414D3 /* Daiqile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC10FDE91DD9532A007414D3 /* Build configuration list for PBXNativeTarget "Daiqile" */;
+			buildPhases = (
+				3F5164A8D91E5A254BBF609F /* [CP] Check Pods Manifest.lock */,
+				BC10FDB51DD9532A007414D3 /* Sources */,
+				BC10FDB61DD9532A007414D3 /* Frameworks */,
+				BC10FDB71DD9532A007414D3 /* Resources */,
+				1FCC160A4EEDFAA057367EAB /* [CP] Embed Pods Frameworks */,
+				628C96584789F00BD13B454F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Daiqile;
+			productName = Daiqile;
+			productReference = BC10FDB91DD9532A007414D3 /* Daiqile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC10FDD41DD9532A007414D3 /* DaiqileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC10FDEC1DD9532A007414D3 /* Build configuration list for PBXNativeTarget "DaiqileTests" */;
+			buildPhases = (
+				BC10FDD11DD9532A007414D3 /* Sources */,
+				BC10FDD21DD9532A007414D3 /* Frameworks */,
+				BC10FDD31DD9532A007414D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC10FDD71DD9532A007414D3 /* PBXTargetDependency */,
+			);
+			name = DaiqileTests;
+			productName = DaiqileTests;
+			productReference = BC10FDD51DD9532A007414D3 /* DaiqileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC10FDDF1DD9532A007414D3 /* DaiqileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC10FDEF1DD9532A007414D3 /* Build configuration list for PBXNativeTarget "DaiqileUITests" */;
+			buildPhases = (
+				BC10FDDC1DD9532A007414D3 /* Sources */,
+				BC10FDDD1DD9532A007414D3 /* Frameworks */,
+				BC10FDDE1DD9532A007414D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC10FDE21DD9532A007414D3 /* PBXTargetDependency */,
+			);
+			name = DaiqileUITests;
+			productName = DaiqileUITests;
+			productReference = BC10FDE01DD9532A007414D3 /* DaiqileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC10FDB11DD9532A007414D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = com.daiqile.daiqile;
+				TargetAttributes = {
+					BC10FDB81DD9532A007414D3 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = UX4TL494S3;
+						ProvisioningStyle = Automatic;
+					};
+					BC10FDD41DD9532A007414D3 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BC10FDB81DD9532A007414D3;
+					};
+					BC10FDDF1DD9532A007414D3 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BC10FDB81DD9532A007414D3;
+					};
+				};
+			};
+			buildConfigurationList = BC10FDB41DD9532A007414D3 /* Build configuration list for PBXProject "Daiqile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC10FDB01DD9532A007414D3;
+			productRefGroup = BC10FDBA1DD9532A007414D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC10FDB81DD9532A007414D3 /* Daiqile */,
+				BC10FDD41DD9532A007414D3 /* DaiqileTests */,
+				BC10FDDF1DD9532A007414D3 /* DaiqileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC10FDB71DD9532A007414D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC10FDCF1DD9532A007414D3 /* LaunchScreen.storyboard in Resources */,
+				BC4852F61DD9674C0045A205 /* MoreViewController.xib in Resources */,
+				BC4853011DDAB6010045A205 /* InvestTableViewCell.xib in Resources */,
+				BC4852F11DD967360045A205 /* InvestViewController.xib in Resources */,
+				BC4852EC1DD967200045A205 /* MainViewController.xib in Resources */,
+				BC10FDCC1DD9532A007414D3 /* Assets.xcassets in Resources */,
+				BC10FDC71DD9532A007414D3 /* Main.storyboard in Resources */,
+				BC4852FB1DD967650045A205 /* AccountViewController.xib in Resources */,
+				BC4852E71DD965C10045A205 /* SuperViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC10FDD31DD9532A007414D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC10FDDE1DD9532A007414D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FCC160A4EEDFAA057367EAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Daiqile/Pods-Daiqile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F5164A8D91E5A254BBF609F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		628C96584789F00BD13B454F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Daiqile/Pods-Daiqile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC10FDB51DD9532A007414D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC4852EB1DD967200045A205 /* MainViewController.m in Sources */,
+				BC4852E61DD965C10045A205 /* SuperViewController.m in Sources */,
+				BC7988B01DDBED8B00433105 /* UIButton+AirButton.m in Sources */,
+				BC10FDC41DD9532A007414D3 /* ViewController.m in Sources */,
+				BC10FDCA1DD9532A007414D3 /* Daiqile.xcdatamodeld in Sources */,
+				BC4853001DDAB6010045A205 /* InvestTableViewCell.m in Sources */,
+				BC10FDFD1DD95E1F007414D3 /* AirNavigationController.m in Sources */,
+				BC4852FA1DD967650045A205 /* AccountViewController.m in Sources */,
+				BC4852F01DD967360045A205 /* InvestViewController.m in Sources */,
+				BC10FDC11DD9532A007414D3 /* AppDelegate.m in Sources */,
+				BC10FDFA1DD95D05007414D3 /* AirTabBarController.m in Sources */,
+				BC4852F51DD9674C0045A205 /* MoreViewController.m in Sources */,
+				BC10FDBE1DD9532A007414D3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC10FDD11DD9532A007414D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC10FDDA1DD9532A007414D3 /* DaiqileTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC10FDDC1DD9532A007414D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC10FDE51DD9532A007414D3 /* DaiqileUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC10FDD71DD9532A007414D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC10FDB81DD9532A007414D3 /* Daiqile */;
+			targetProxy = BC10FDD61DD9532A007414D3 /* PBXContainerItemProxy */;
+		};
+		BC10FDE21DD9532A007414D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC10FDB81DD9532A007414D3 /* Daiqile */;
+			targetProxy = BC10FDE11DD9532A007414D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC10FDC51DD9532A007414D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC10FDC61DD9532A007414D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC10FDCD1DD9532A007414D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC10FDCE1DD9532A007414D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC10FDE71DD9532A007414D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BC10FDE81DD9532A007414D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC10FDEA1DD9532A007414D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11706F54FDE579504F648956 /* Pods-Daiqile.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UX4TL494S3;
+				GCC_PREFIX_HEADER = Daiqile/PrefixHeader.pch;
+				INFOPLIST_FILE = Daiqile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dql.Daiqile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BC10FDEB1DD9532A007414D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28CE14A381CD2705E0E4E010 /* Pods-Daiqile.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UX4TL494S3;
+				GCC_PREFIX_HEADER = Daiqile/PrefixHeader.pch;
+				INFOPLIST_FILE = Daiqile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dql.Daiqile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BC10FDED1DD9532A007414D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DaiqileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dql.DaiqileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daiqile.app/Daiqile";
+			};
+			name = Debug;
+		};
+		BC10FDEE1DD9532A007414D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DaiqileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dql.DaiqileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daiqile.app/Daiqile";
+			};
+			name = Release;
+		};
+		BC10FDF01DD9532A007414D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DaiqileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dql.DaiqileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Daiqile;
+			};
+			name = Debug;
+		};
+		BC10FDF11DD9532A007414D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DaiqileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dql.DaiqileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Daiqile;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC10FDB41DD9532A007414D3 /* Build configuration list for PBXProject "Daiqile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC10FDE71DD9532A007414D3 /* Debug */,
+				BC10FDE81DD9532A007414D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC10FDE91DD9532A007414D3 /* Build configuration list for PBXNativeTarget "Daiqile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC10FDEA1DD9532A007414D3 /* Debug */,
+				BC10FDEB1DD9532A007414D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC10FDEC1DD9532A007414D3 /* Build configuration list for PBXNativeTarget "DaiqileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC10FDED1DD9532A007414D3 /* Debug */,
+				BC10FDEE1DD9532A007414D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC10FDEF1DD9532A007414D3 /* Build configuration list for PBXNativeTarget "DaiqileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC10FDF01DD9532A007414D3 /* Debug */,
+				BC10FDF11DD9532A007414D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BC10FDC81DD9532A007414D3 /* Daiqile.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BC10FDC91DD9532A007414D3 /* Daiqile.xcdatamodel */,
+			);
+			currentVersion = BC10FDC91DD9532A007414D3 /* Daiqile.xcdatamodel */;
+			path = Daiqile.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BC10FDB11DD9532A007414D3 /* Project object */;
+}

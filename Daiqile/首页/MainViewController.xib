@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="cycleScroll" destination="Le6-6l-U7v" id="0ra-WS-5rv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJE-ae-hJZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J64-bN-Vka">
+                            <rect key="frame" x="0.0" y="63" width="375" height="541"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Le6-6l-U7v" customClass="SDCycleScrollView">
+                                    <rect key="frame" x="0.0" y="-64" width="375" height="130"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tQh-bK-4Y9">
+                                    <rect key="frame" x="8" y="96" width="359" height="295"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqw-we-pIO">
+                                    <rect key="frame" x="30" y="421" width="315" height="45"/>
+                                    <color key="backgroundColor" red="1" green="0.90196078431372551" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="Jg6-4V-kuC"/>
+                                    </constraints>
+                                    <state key="normal" title="立即投标">
+                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="tQh-bK-4Y9" firstAttribute="leading" secondItem="J64-bN-Vka" secondAttribute="leading" constant="8" id="AKm-zV-hbe"/>
+                                <constraint firstAttribute="trailing" secondItem="tQh-bK-4Y9" secondAttribute="trailing" constant="8" id="JKy-44-Cdv"/>
+                                <constraint firstItem="Le6-6l-U7v" firstAttribute="height" secondItem="J64-bN-Vka" secondAttribute="height" multiplier="0.24" id="OI8-f3-K7y"/>
+                                <constraint firstItem="Le6-6l-U7v" firstAttribute="leading" secondItem="J64-bN-Vka" secondAttribute="leading" id="ZPi-VQ-Myo"/>
+                                <constraint firstItem="sqw-we-pIO" firstAttribute="leading" secondItem="J64-bN-Vka" secondAttribute="leading" constant="30" id="cIn-gX-4ej"/>
+                                <constraint firstAttribute="bottom" secondItem="sqw-we-pIO" secondAttribute="bottom" constant="75" id="cmw-Kf-WD7"/>
+                                <constraint firstItem="sqw-we-pIO" firstAttribute="top" secondItem="tQh-bK-4Y9" secondAttribute="bottom" constant="30" id="dzA-ks-Mdy"/>
+                                <constraint firstItem="tQh-bK-4Y9" firstAttribute="top" secondItem="Le6-6l-U7v" secondAttribute="bottom" constant="30" id="myU-NJ-iEK"/>
+                                <constraint firstItem="Le6-6l-U7v" firstAttribute="top" secondItem="J64-bN-Vka" secondAttribute="top" constant="-64" id="tOB-bp-82r"/>
+                                <constraint firstAttribute="trailing" secondItem="Le6-6l-U7v" secondAttribute="trailing" id="vgY-uR-Rzh"/>
+                                <constraint firstAttribute="trailing" secondItem="sqw-we-pIO" secondAttribute="trailing" constant="30" id="wn6-6M-FGJ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="J64-bN-Vka" firstAttribute="top" secondItem="PJE-ae-hJZ" secondAttribute="top" constant="63" id="7Uf-Aq-m5M"/>
+                        <constraint firstItem="J64-bN-Vka" firstAttribute="centerX" secondItem="PJE-ae-hJZ" secondAttribute="centerX" id="7dM-ne-ePU"/>
+                        <constraint firstAttribute="bottom" secondItem="J64-bN-Vka" secondAttribute="bottom" constant="-48" id="9vX-u1-7Fl"/>
+                        <constraint firstItem="J64-bN-Vka" firstAttribute="centerY" secondItem="PJE-ae-hJZ" secondAttribute="centerY" id="Ope-ni-83O"/>
+                        <constraint firstAttribute="trailing" secondItem="J64-bN-Vka" secondAttribute="trailing" id="XYf-SV-oBk"/>
+                        <constraint firstItem="J64-bN-Vka" firstAttribute="leading" secondItem="PJE-ae-hJZ" secondAttribute="leading" id="k4Y-ru-KXc"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PJE-ae-hJZ" secondAttribute="trailing" id="V0r-08-hNr"/>
+                <constraint firstAttribute="bottom" secondItem="PJE-ae-hJZ" secondAttribute="bottom" id="ZzA-h5-sg6"/>
+                <constraint firstItem="PJE-ae-hJZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="haX-sY-VZC"/>
+                <constraint firstItem="PJE-ae-hJZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lFx-H1-qaz"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
