@@ -8,36 +8,96 @@
 
 #import "MainViewController.h"
 #import "SDCycleScrollView.h"
-
+#import "ArcView.h"
+#import "Feiyangyidai.h"
+#import "DetailViewController.h"
+#import "LoginViewController.h"
 @interface MainViewController ()
-
+{
+    Feiyangyidai *model;
+}
 @property (strong, nonatomic) IBOutlet SDCycleScrollView *cycleScroll;
+@property (strong, nonatomic) ArcView *arcView;
+@property (strong, nonatomic) IBOutlet UIView *progressView;
+
 
 @end
 
 @implementation MainViewController
 
+- (ArcView *)arcView{
+    
+    if (!_arcView) {
+        
+        _arcView = [[ArcView alloc]initWithFrame:_progressView.bounds];
+        
+        [_progressView addSubview:_arcView];
+        
+    }
+    
+    return _arcView;
+}
+
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    self.navigationItem.title = @"贷奇乐";
+    
+    self.navigationItem.title = @"聚租金服";
+    
     _cycleScroll.localizationImageNamesGroup = @[@"banner1",@"banner2",@"banner3"];
+ 
+    [self arcView];
+    
+    
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self sendHttpResquest];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+//网络请求
+- (void)sendHttpResquest
+{
+    [HttpManager sendGetRequestWithDictionary:nil withUrl:@"port/getBorrowList.php" Success:^(NSDictionary *responseData) {
+        
+        NSDictionary *dict = [[responseData objectForKey:@"list"] firstObject];
+        
+        model = [[Feiyangyidai alloc]initWithDict:dict];
+        
+        self.arcView.model = model;
+    
+    } Failed:^(NSError *error) {
+        
+        [LCProgressHUD showMessage:@"网络请求出错,请联系管理员!"];
+        
+    }];
+
 }
-*/
+
+//立即投标
+- (IBAction)Toubiao:(id)sender
+{
+    if (!LOGINSTATUS) {
+        
+        LoginViewController *login = [[LoginViewController alloc]init];
+        
+        PUSH(login);
+        
+    }else{
+        
+        DetailViewController *detail = [[DetailViewController alloc]init];
+        
+        detail.model = model;
+        
+        PUSH(detail);
+    }
+    
+}
+
 
 @end

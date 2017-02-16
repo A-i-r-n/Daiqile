@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 #import "AirTabBarController.h"
-
+#import "GestureViewController.h"
+#import "AirNavigationController.h"
 @interface AppDelegate ()
 
 @property(nonatomic,strong)UINavigationController *navigationController;
@@ -22,15 +23,45 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     
-    self.navigationController = [[UINavigationController alloc]init];
-    AirTabBarController *tabVc = [[AirTabBarController alloc] init];
-    [self.window setRootViewController:tabVc];
+    if (LOGINSTATUS) {
+        
+        [self setGetrueVC];
+
+        
+    }else{
+        
+        [self setupTabBar];
+        
+    }
+
+     [NSThread sleepForTimeInterval:1.5];
+    
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
+
+- (void)setupTabBar
+{
+    self.navigationController = [[UINavigationController alloc]init];
+    
+    AirTabBarController *tabVc = [[AirTabBarController alloc] init];
+    
+    [self.window setRootViewController:tabVc];
+}
+
+- (void)setGetrueVC
+{
+    GestureViewController *gesture = [[GestureViewController alloc]init];
+    //UINavigationController *nav =[[UINavigationController alloc]initWithRootViewController:gesture];
+    
+    [self.window setRootViewController:[[AirNavigationController alloc] initWithRootViewController:gesture]];
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

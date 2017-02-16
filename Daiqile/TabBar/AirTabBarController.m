@@ -14,7 +14,7 @@
 #import "MoreViewController.h"
 #import "AccountViewController.h"
 
-@interface AirTabBarController ()
+@interface AirTabBarController ()<UITabBarDelegate,UITabBarControllerDelegate>
 
 
 @end
@@ -23,6 +23,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //设置代理
+    //self.delegate = self;
     
     // 添加所有的子控制器
     [self setupChildVcs];
@@ -84,5 +87,46 @@
     [item setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
     [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
 }
+
+
+#pragma mark - UITabBarControllerDelegate
+
+//这个方法根据官方文档解释意思就是点击下面的tabBar的按钮时候  根据BOOL值来判断是否处于可继续点击状态
+
+//- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController NS_AVAILABLE_IOS(3_0){
+//    
+//    if (viewController.tabBarItem.tag == 3 ){
+//        
+//        if (LOGINSTATUS) {
+//            
+//            LoginViewController *loginVC = [[LoginViewController alloc] init];
+//            
+//            UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:loginVC];
+//            
+//            [self presentViewController:navi animated:YES completion:^{
+//                
+//            }];
+//            
+//            return NO;
+//            
+//        }else{
+//            
+//            return YES;
+//            
+//        }
+//        
+//    }else{
+//        
+//        return YES;
+//    }
+//    
+//}
+- (void)presentLeftMenuViewController{
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
+
+
 
 @end

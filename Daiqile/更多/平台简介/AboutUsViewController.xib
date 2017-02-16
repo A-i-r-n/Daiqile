@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutUsViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关于我们" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5y-2Z-o3p">
+                    <rect key="frame" x="15" y="84" width="82" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="1" green="0.68627450980000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ox-zq-2t5">
+                    <rect key="frame" x="8" y="138" width="359" height="210.5"/>
+                    <string key="text">聚租金服是由聚租金融信息服务（杭州）有限公司投资运营的互联网理财服务平台。聚租金服致力于通过整合不动产产业链资源、联合专业资产管理机构，运用互联网创新手段发展普惠金融。 聚租金服依托线下不动产运营管理为风险控制核心，秉持“安全为先、客户为先”的理念，为投资人提供低风险、高性价比的理财产品，实现用户资产的保值增值；为不动产持有人提供便利的融资渠道，降低融资成本，力争成为国家倡导的多层次投融资体系中领先的互联网金融信息服务平台。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3Ox-zq-2t5" firstAttribute="top" secondItem="z5y-2Z-o3p" secondAttribute="bottom" constant="30" id="Hc5-cp-xcW"/>
+                <constraint firstItem="z5y-2Z-o3p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Zu7-GD-sCn"/>
+                <constraint firstAttribute="trailing" secondItem="3Ox-zq-2t5" secondAttribute="trailing" constant="8" id="eXZ-Zl-jIv"/>
+                <constraint firstItem="3Ox-zq-2t5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="etg-P8-HIc"/>
+                <constraint firstItem="z5y-2Z-o3p" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="swb-ld-F9e"/>
+            </constraints>
+            <point key="canvasLocation" x="54.5" y="134.5"/>
+        </view>
+    </objects>
+</document>

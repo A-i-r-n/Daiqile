@@ -20,11 +20,7 @@
     
     
 //    //父视图背景图片
-//    UIImageView *bgImgView = [[UIImageView alloc]initWithFrame:self.view.frame];
-//    bgImgView.image = [UIImage imageNamed:@"all_bg"];
-//    [bgImgView bringSubviewToFront:self.view];
-//    [self.view addSubview:bgImgView];
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"all_bg"]];
+    //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"all_bg"]];
     
     //父视图导航栏属性
     self.navigationController.navigationBar.barTintColor = MainColor;

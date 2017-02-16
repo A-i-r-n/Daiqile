@@ -9,6 +9,32 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 #import "Masonry.h"
+#import "AFNetworking.h"
+#import "HttpManager.h"
+#import "ToolModel.h"
+#import "MJRefresh.h"
+#import "LCProgressHUD.h"
+#import "LoginViewController.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+
+//服务器地址
+#define URLSTRING @"http://106.14.75.136/"
+
+//判断用户是否登录
+#define LOGINSTATUS [[[NSUserDefaults standardUserDefaults] objectForKey:@"loginStatus"] isEqualToString:@"1"]
+
+//获取 userDefault 中数据
+#define UserDefaultGetValue(key) [[NSUserDefaults standardUserDefaults] objectForKey:key]
+
+//设置 userDefault 中数据
+#define UserDefaultSetValue(object,key) [[NSUserDefaults standardUserDefaults] setObject:object forKey:key]
+
+//同步 userDefault
+#define SynchUserDefault [[NSUserDefaults standardUserDefaults] synchronize]
+
+//删除 userDefault 中数据
+#define RemoveUserDefault(key)  [[NSUserDefaults standardUserDefaults] removeObjectForKey:key]
 
 //屏幕比例
 #define Ratio(height) height * ScreenWidth / 375.0;
@@ -17,15 +43,41 @@
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 //屏幕高
 #define ScreenHeight  [UIScreen mainScreen].bounds.size.height
+//导航条高度
+#define NavBarHeight 64.0
 
 //主题色
-#define MainColor [UIColor colorWithRed:20/255.0 green:20/255.0 blue:30/255.0 alpha:0.3]
+#define MainColor [UIColor colorWithRed:(float)255/255.0 green:(float)175/255.0 blue:(float)0/255.0 alpha:1]
+
+//辅色
+#define AssistColor [UIColor colorWithRed:(float)245/255.0 green:(float)20/255.0 blue:(float)55/255.0 alpha:1]
 
 //金色
 #define GoldColor [UIColor colorWithRed:255/255.0 green:230/255.0 blue:145/255.0 alpha:1]
 
 //push控制器
 #define PUSH(V) [self.navigationController pushViewController:V animated:YES]
+
+//pop控制器
+#define POPViewController [self.navigationController popViewControllerAnimated:YES]
+
+//判断是否为iphone 5
+#define kDevice_Is_iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//首页弧形图圆心 X 轴
+#define ArcCenterX ([UIScreen mainScreen].bounds.size.width/2.0 - 5)
+
+//首页弧形图圆心 Y 轴
+#define ArcCenterY ([UIScreen mainScreen].bounds.size.height/4.0 - 20)
+
+
+
+
+
+
+
+
+
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.

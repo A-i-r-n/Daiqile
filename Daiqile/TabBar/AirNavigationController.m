@@ -60,10 +60,6 @@
         UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
         //[backButton setTitle:@"返回" forState:UIControlStateNormal];
         [backButton setImage:[UIImage imageNamed:@"icon_prev"] forState:UIControlStateNormal];
-//        [backButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-//        [backButton setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
-//        [backButton setImage:[UIImage imageNamed:@"navigationButtonReturn"] forState:UIControlStateNormal];
-//        [backButton setImage:[UIImage imageNamed:@"navigationButtonReturnClick"] forState:UIControlStateHighlighted];
         [backButton sizeToFit];
         [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
         backButton.contentEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);

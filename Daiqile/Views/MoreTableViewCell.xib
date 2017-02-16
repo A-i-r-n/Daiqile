@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v8z-6C-Hlr">
-                        <rect key="frame" x="20" y="0.0" width="325" height="63"/>
+                        <rect key="frame" x="8" y="0.0" width="349" height="63"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more_help" translatesAutoresizingMaskIntoConstraints="NO" id="9Jk-vw-Pv0">
                                 <rect key="frame" x="0.0" y="11.5" width="40" height="40"/>
@@ -27,16 +27,20 @@
                                     <constraint firstAttribute="height" constant="40" id="ElJ-iU-iZK"/>
                                     <constraint firstAttribute="width" constant="40" id="d3y-IE-0j6"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_next" translatesAutoresizingMaskIntoConstraints="NO" id="SDf-cX-KXq">
-                                <rect key="frame" x="302" y="21.5" width="15" height="20"/>
+                                <rect key="frame" x="326" y="21.5" width="15" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="15" id="pMA-9H-ITg"/>
                                     <constraint firstAttribute="height" constant="20" id="w6X-l8-JWt"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="平台简介" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4L-7g-E27">
-                                <rect key="frame" x="48" y="21" width="246" height="21"/>
+                                <rect key="frame" x="48" y="21" width="270" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -57,9 +61,9 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="v8z-6C-Hlr" secondAttribute="bottom" id="8W8-cM-9Px"/>
-                    <constraint firstItem="v8z-6C-Hlr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Jou-0C-rSV"/>
+                    <constraint firstItem="v8z-6C-Hlr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Jou-0C-rSV"/>
                     <constraint firstItem="v8z-6C-Hlr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lzs-4p-uc3"/>
-                    <constraint firstAttribute="trailing" secondItem="v8z-6C-Hlr" secondAttribute="trailing" constant="20" id="mns-kU-O37"/>
+                    <constraint firstAttribute="trailing" secondItem="v8z-6C-Hlr" secondAttribute="trailing" constant="8" id="mns-kU-O37"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

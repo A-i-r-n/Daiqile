@@ -17,6 +17,7 @@
 
 - (void)saveContext;
 
+- (void)setupTabBar;
 
 @end
 
