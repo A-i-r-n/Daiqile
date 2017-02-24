@@ -57,6 +57,9 @@
                                     <rect key="frame" x="53" y="11" width="244" height="19"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="s1A-np-hkw"/>
+                                    </connections>
                                 </textField>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -85,6 +88,9 @@
                                     <rect key="frame" x="53" y="11" width="244" height="19"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="dTC-a8-KDQ"/>
+                                    </connections>
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUT-8Q-RSY">
                                     <rect key="frame" x="15" y="34" width="275" height="1"/>
@@ -141,15 +147,6 @@
                         <action selector="LoginClick:" destination="-1" eventType="touchUpInside" id="uwh-iG-MAZ"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwP-Jt-pWi">
-                    <rect key="frame" x="276" y="339" width="69" height="30"/>
-                    <state key="normal" title="忘记密码?">
-                        <color key="titleColor" red="1" green="0.68627450980000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="forgetPassWord:" destination="-1" eventType="touchUpInside" id="X3p-3D-FRq"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cua-nx-MQN">
                     <rect key="frame" x="30" y="339" width="31" height="30"/>
                     <state key="normal" title="注册">
@@ -176,7 +173,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="记住密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chH-Ql-lru">
                             <rect key="frame" x="51" y="10" width="62" height="18"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                            <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -198,12 +195,10 @@
                 <constraint firstAttribute="trailing" secondItem="P3r-I8-nKb" secondAttribute="trailing" constant="30" id="Dyr-Y4-fnG"/>
                 <constraint firstItem="WRD-Bg-fcn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LRY-8V-aHe"/>
                 <constraint firstAttribute="trailing" secondItem="6W0-pA-RU0" secondAttribute="trailing" id="QMg-RY-IzC"/>
-                <constraint firstAttribute="trailing" secondItem="IwP-Jt-pWi" secondAttribute="trailing" constant="30" id="REO-CN-lPt"/>
                 <constraint firstItem="WRD-Bg-fcn" firstAttribute="top" secondItem="6W0-pA-RU0" secondAttribute="bottom" constant="15" id="SrT-kq-GSK"/>
                 <constraint firstItem="P3r-I8-nKb" firstAttribute="top" secondItem="Cra-v9-23E" secondAttribute="bottom" constant="8" id="aOc-gO-Pq9"/>
                 <constraint firstItem="P3r-I8-nKb" firstAttribute="top" secondItem="WRD-Bg-fcn" secondAttribute="bottom" constant="45" id="kNy-9b-6Gw"/>
                 <constraint firstItem="6W0-pA-RU0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kkv-fm-83C"/>
-                <constraint firstItem="IwP-Jt-pWi" firstAttribute="top" secondItem="P3r-I8-nKb" secondAttribute="bottom" constant="10" id="nks-lE-IuU"/>
                 <constraint firstAttribute="trailing" secondItem="Cra-v9-23E" secondAttribute="trailing" constant="30" id="qhQ-5G-BLH"/>
                 <constraint firstAttribute="trailing" secondItem="WRD-Bg-fcn" secondAttribute="trailing" id="rFn-qk-5fx"/>
                 <constraint firstItem="Cra-v9-23E" firstAttribute="top" secondItem="WRD-Bg-fcn" secondAttribute="bottom" id="vV3-EZ-xgI"/>

@@ -31,13 +31,13 @@
                         <constraint firstAttribute="height" constant="60" id="kku-Rk-mCj"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注册就表示您已同意&lt;注册协议&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1X-Cv-TaP">
-                    <rect key="frame" x="86" y="402.5" width="204" height="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注册就表示您已同意" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1X-Cv-TaP">
+                    <rect key="frame" x="73" y="402.5" width="129" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXk-4p-luE">
-                    <rect key="frame" x="113" y="427.5" width="150" height="35"/>
+                    <rect key="frame" x="112.5" y="427.5" width="150" height="35"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已有账号?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYN-Wt-d6v">
                             <rect key="frame" x="8" y="8" width="74" height="20"/>
@@ -91,6 +91,9 @@
                                     <rect key="frame" x="53" y="12" width="244" height="19"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="irH-bA-zkx"/>
+                                    </connections>
                                 </textField>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -119,6 +122,9 @@
                                     <rect key="frame" x="53" y="12.5" width="244" height="19"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="Zyc-yk-3ZJ"/>
+                                    </connections>
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ml-cE-ZUB">
                                     <rect key="frame" x="15" y="34" width="275" height="1"/>
@@ -157,6 +163,9 @@
                                     <rect key="frame" x="53" y="12.5" width="244" height="19"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="lGf-83-bjQ"/>
+                                    </connections>
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gp9-wF-Sh6">
                                     <rect key="frame" x="15" y="34.5" width="275" height="1"/>
@@ -212,6 +221,9 @@
                             <rect key="frame" x="53" y="12.5" width="244" height="19"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="LTF-VS-66B"/>
+                            </connections>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41z-Dp-uFt">
                             <rect key="frame" x="15" y="34.5" width="275" height="1"/>
@@ -254,21 +266,33 @@
                         <action selector="regist:" destination="-1" eventType="touchUpInside" id="vBf-YI-BuK"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ant-GE-yGu">
+                    <rect key="frame" x="210" y="397" width="75" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="&lt;注册协议&gt;">
+                        <color key="titleColor" red="1" green="0.68627450980000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="registDelegate:" destination="-1" eventType="touchUpInside" id="GXv-i4-XWW"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="erf-ZK-MpD" secondAttribute="trailing" constant="35" id="3mH-kO-ful"/>
-                <constraint firstItem="T1X-Cv-TaP" firstAttribute="centerX" secondItem="4z8-zw-tA0" secondAttribute="centerX" id="7dY-Cf-4uC"/>
+                <constraint firstItem="Ant-GE-yGu" firstAttribute="leading" secondItem="T1X-Cv-TaP" secondAttribute="trailing" constant="8" id="7Cy-ST-eZg"/>
+                <constraint firstItem="T1X-Cv-TaP" firstAttribute="centerX" secondItem="4z8-zw-tA0" secondAttribute="centerX" constant="-50" id="7dY-Cf-4uC"/>
                 <constraint firstItem="i2P-XJ-6O9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="E4P-El-nM6"/>
+                <constraint firstItem="LXk-4p-luE" firstAttribute="centerX" secondItem="4z8-zw-tA0" secondAttribute="centerX" id="EU0-Mh-zxw"/>
                 <constraint firstItem="erf-ZK-MpD" firstAttribute="height" secondItem="Whv-0q-v3J" secondAttribute="height" id="EyC-3F-HkW"/>
                 <constraint firstItem="4z8-zw-tA0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="HBk-5T-UWj"/>
                 <constraint firstItem="erf-ZK-MpD" firstAttribute="top" secondItem="q3b-hA-5uH" secondAttribute="bottom" id="K4F-2g-FjQ"/>
                 <constraint firstItem="T1X-Cv-TaP" firstAttribute="top" secondItem="4z8-zw-tA0" secondAttribute="bottom" constant="15" id="NOk-vz-3cB"/>
-                <constraint firstItem="LXk-4p-luE" firstAttribute="centerX" secondItem="T1X-Cv-TaP" secondAttribute="centerX" id="O6t-oc-4u9"/>
                 <constraint firstItem="4z8-zw-tA0" firstAttribute="top" secondItem="erf-ZK-MpD" secondAttribute="bottom" constant="10" id="Pl7-L7-EPN"/>
                 <constraint firstItem="erf-ZK-MpD" firstAttribute="height" secondItem="cZC-z8-kX3" secondAttribute="height" id="TFo-1r-8w8"/>
                 <constraint firstItem="i2P-XJ-6O9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="UR1-97-aju"/>
                 <constraint firstItem="q3b-hA-5uH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wz3-s6-Na3"/>
+                <constraint firstItem="Ant-GE-yGu" firstAttribute="centerY" secondItem="T1X-Cv-TaP" secondAttribute="centerY" id="eae-iE-7cj"/>
                 <constraint firstItem="LXk-4p-luE" firstAttribute="top" secondItem="T1X-Cv-TaP" secondAttribute="bottom" constant="8" id="fJn-3U-bBd"/>
                 <constraint firstAttribute="trailing" secondItem="i2P-XJ-6O9" secondAttribute="trailing" id="jFJ-xA-XAZ"/>
                 <constraint firstAttribute="trailing" secondItem="4z8-zw-tA0" secondAttribute="trailing" constant="30" id="nuk-tj-Xh7"/>
@@ -277,7 +301,7 @@
                 <constraint firstAttribute="trailing" secondItem="q3b-hA-5uH" secondAttribute="trailing" id="tbc-SH-soF"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-            <point key="canvasLocation" x="32.5" y="101.5"/>
+            <point key="canvasLocation" x="-45.5" y="-232.5"/>
         </view>
     </objects>
     <resources>

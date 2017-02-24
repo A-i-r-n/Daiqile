@@ -37,14 +37,14 @@
 - (void)setupChildVcs
 {
 
-    [self setupChildVc:[[MainViewController alloc] init] title:@"首页" image:@"icon_nav_home" selectedImage:@"icon_nav_home"];
+    [self setupChildVc:[[MainViewController alloc] init] title:@"推荐" image:@"icon_nav_home" selectedImage:@"icon_nav_home_sec"];
     
-    [self setupChildVc:[[InvestViewController alloc] init] title:@"投资" image:@"icon_nav_invest" selectedImage:@"icon_nav_invest"];
+    [self setupChildVc:[[InvestViewController alloc] init] title:@"理财超市" image:@"icon_nav_invest" selectedImage:@"icon_nav_invest_sec"];
     
     
-    [self setupChildVc:[[AccountViewController alloc] init] title:@"账户" image:@"icon_nav_user" selectedImage:@"icon_nav_user"];
+    [self setupChildVc:[[AccountViewController alloc] init] title:@"我的财富" image:@"icon_nav_user" selectedImage:@"icon_nav_user_sec"];
     
-    [self setupChildVc:[[MoreViewController alloc] init] title:@"更多" image:@"icon_nav_more" selectedImage:@"icon_nav_more"];
+    [self setupChildVc:[[MoreViewController alloc] init] title:@"更多" image:@"icon_nav_more" selectedImage:@"icon_nav_more_sec"];
     
     
 }
@@ -79,7 +79,7 @@
     // UIControlStateSelected状态下的文字属性
     NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
     // 文字颜色
-    selectedAttrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
+    selectedAttrs[NSForegroundColorAttributeName] = AssistColor;
     
     // 统一给所有的UITabBarItem设置文字属性
     // 只有后面带有UI_APPEARANCE_SELECTOR的属性或方法, 才可以通过appearance对象来统一设置

@@ -270,7 +270,7 @@ static NSString *const kContentOffsetOffKey = @"contentOffset";
 }
 
 - (void)willAppearWithIndex:(NSInteger)index {
-    UIViewController<ZJScrollPageViewChildVcDelegate> *controller = [self.childVcsDic valueForKey:[NSString stringWithFormat:@"%ld", index]];
+    UIViewController<ZJScrollPageViewChildVcDelegate> *controller = [self.childVcsDic valueForKey:[NSString stringWithFormat:@"%ld", (long)index]];
     if (controller) {
         if ([controller respondsToSelector:@selector(zj_viewWillAppearForIndex:)]) {
             [controller zj_viewWillAppearForIndex:index];
@@ -289,7 +289,7 @@ static NSString *const kContentOffsetOffKey = @"contentOffset";
 }
 
 - (void)didAppearWithIndex:(NSInteger)index {
-    UIViewController<ZJScrollPageViewChildVcDelegate> *controller = [self.childVcsDic valueForKey:[NSString stringWithFormat:@"%ld", index]];
+    UIViewController<ZJScrollPageViewChildVcDelegate> *controller = [self.childVcsDic valueForKey:[NSString stringWithFormat:@"%ld", (long)index]];
     if (controller) {
         if ([controller respondsToSelector:@selector(zj_viewDidAppearForIndex:)]) {
             [controller zj_viewDidAppearForIndex:index];
@@ -309,7 +309,7 @@ static NSString *const kContentOffsetOffKey = @"contentOffset";
 }
 
 - (void)willDisappearWithIndex:(NSInteger)index {
-    UIViewController<ZJScrollPageViewChildVcDelegate> *controller = [self.childVcsDic valueForKey:[NSString stringWithFormat:@"%ld", index]];
+    UIViewController<ZJScrollPageViewChildVcDelegate> *controller = [self.childVcsDic valueForKey:[NSString stringWithFormat:@"%ld", (long)index]];
     if (controller) {
         if ([controller respondsToSelector:@selector(zj_viewWillDisappearForIndex:)]) {
             [controller zj_viewWillDisappearForIndex:index];
@@ -326,7 +326,7 @@ static NSString *const kContentOffsetOffKey = @"contentOffset";
     
 }
 - (void)didDisappearWithIndex:(NSInteger)index {
-    UIViewController<ZJScrollPageViewChildVcDelegate> *controller = [self.childVcsDic valueForKey:[NSString stringWithFormat:@"%ld", index]];
+    UIViewController<ZJScrollPageViewChildVcDelegate> *controller = [self.childVcsDic valueForKey:[NSString stringWithFormat:@"%ld", (long)index]];
     if (controller) {
         if ([controller respondsToSelector:@selector(zj_viewDidDisappearForIndex:)]) {
             [controller zj_viewDidDisappearForIndex:index];
@@ -456,11 +456,11 @@ static NSString *const kContentOffsetOffKey = @"contentOffset";
         
 
         if (_needManageLifeCycle) {
-            UIViewController<ZJScrollPageViewChildVcDelegate> *currentVc = [self.childVcsDic valueForKey:[NSString stringWithFormat:@"%ld", _currentIndex]];
+            UIViewController<ZJScrollPageViewChildVcDelegate> *currentVc = [self.childVcsDic valueForKey:[NSString stringWithFormat:@"%ld", (long)_currentIndex]];
             // 开始出现
             [currentVc beginAppearanceTransition:YES animated:NO];
             
-            UIViewController<ZJScrollPageViewChildVcDelegate> *oldVc = [self.childVcsDic valueForKey:[NSString stringWithFormat:@"%ld", indexPath.row]];
+            UIViewController<ZJScrollPageViewChildVcDelegate> *oldVc = [self.childVcsDic valueForKey:[NSString stringWithFormat:@"%ld", (long)indexPath.row]];
             // 开始消失
             [oldVc beginAppearanceTransition:NO animated:NO];
             
@@ -488,11 +488,11 @@ static NSString *const kContentOffsetOffKey = @"contentOffset";
         else {
              // 滚动没有完成又快速的反向打开了另一页
             if (_needManageLifeCycle) {
-                UIViewController<ZJScrollPageViewChildVcDelegate> *currentVc = [self.childVcsDic valueForKey:[NSString stringWithFormat:@"%ld", _oldIndex]];
+                UIViewController<ZJScrollPageViewChildVcDelegate> *currentVc = [self.childVcsDic valueForKey:[NSString stringWithFormat:@"%ld", (long)_oldIndex]];
                 // 开始出现
                 [currentVc beginAppearanceTransition:YES animated:NO];
                 
-                UIViewController<ZJScrollPageViewChildVcDelegate> *oldVc = [self.childVcsDic valueForKey:[NSString stringWithFormat:@"%ld", indexPath.row]];
+                UIViewController<ZJScrollPageViewChildVcDelegate> *oldVc = [self.childVcsDic valueForKey:[NSString stringWithFormat:@"%ld", (long)indexPath.row]];
                 // 开始消失
                 [oldVc beginAppearanceTransition:NO animated:NO];
                 // 消失

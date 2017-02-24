@@ -69,6 +69,7 @@
 //提交(确认绑定)
 - (IBAction)submit:(id)sender
 {
+    UIButton *button = (UIButton *)sender;
     
     NSDictionary *parameters=@{@"user_id":UserDefaultGetValue(@"userId"),@"pay_code":self.bankName.titleLabel.text,@"acc_no":self.cardNum.text,@"branch":self.subBankName.text};
     
@@ -81,6 +82,12 @@
         if ([status isEqualToString:@"1"]) {
             
             [LCProgressHUD showMessage:remark];
+            
+            button.backgroundColor = [UIColor lightGrayColor];
+            
+            button.enabled = NO;
+            
+            POPViewController;
             
         }else{
             

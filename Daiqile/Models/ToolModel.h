@@ -14,13 +14,13 @@
 
 +(NSString*)linkUrl:(NSString*)path;
 +(NSString *)filterHTML:(NSString *)str;
-+ (NSString *)md5:(NSString *)str;
-- (NSString*)md532BitUpper;
+//+ (NSString *)md5:(NSString *)str;
+//- (NSString*)md532BitUpper;
 + (BOOL) validateIdentityCard: (NSString *)identityCard;
 + (NSString *)valiMobile:(NSString *)mobile;
 + (BOOL) checkCardNo:(NSString*)cardNo;
 + (BOOL)isBlankString:(NSString *)string;
--(NSString*)convertNull:(id)object;
+//-(NSString*)convertNull:(id)object;
 + (void)showAlertViewWithString:(NSString *)string;
 
 + (NSArray *)filterImage:(NSString *)html;

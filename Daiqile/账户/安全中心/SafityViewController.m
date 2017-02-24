@@ -14,17 +14,24 @@
 #import "ChangePWViewController.h"
 #import "ChangeGestureViewController.h"
 #import "RealnameViewController.h"
+#import "SetPayPWViewController.h"
+#import "EmailAuthenViewController.h"
 
+
+#define ExplainHeight 100
 
 @interface SafityViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 {
     NSMutableArray *_imgArray;
     NSMutableArray *_titleArray;
+    NSString *_authenStatus;
     
 }
 
-@property (nonatomic,strong) UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+//@property (nonatomic,strong) UITableView *tableView;
 
 @end
 
@@ -35,28 +42,15 @@
     // Do any additional setup after loading the view from its nib.
     self.navigationItem.title = @"安全中心";
     
-    _imgArray = [NSMutableArray arrayWithObjects:@[@"密码"/*,@"icon_safety_deal_pwd"*/,@"手势密码"],@[/*@"icon_safety_phone",*/@"实名认证"],nil];
+    _imgArray = [NSMutableArray arrayWithObjects:@[@"密码",@"手势密码",@"密码"],@[@"实名认证",@"邮箱认证"],nil];
     
-    _titleArray = [NSMutableArray arrayWithObjects:@[@"修改登录密码"/*,@"修改支付密码"*/,@"设置手势密码"],@[/*@"手机认证",*/@"实名认证"],nil];
+    _titleArray = [NSMutableArray arrayWithObjects:@[@"修改登录密码",@"设置手势密码",@"设置交易密码"],@[@"实名认证",@"邮箱认证"],nil];
     
-    
-    [self createTableView];
     
     [self registCell];
 }
 
-- (void)createTableView
-{
-    self.view.backgroundColor = [UIColor clearColor];
-    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStyleGrouped];
-    //_tableView.backgroundView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"all_bg"]];
-    _tableView.delegate = self;
-    _tableView.dataSource = self;
-    //_tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    //_tableView.backgroundColor = [UIColor clearColor];
-    [self.view addSubview:_tableView];
-}
-
+//注册cell
 - (void)registCell
 {
     [_tableView registerNib:[UINib nibWithNibName:@"SwitchTableViewCell" bundle:nil] forCellReuseIdentifier:@"switchCell"];
@@ -72,10 +66,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (section == 0) {
-        return 2;
-    }
-    return 1;
+    return [_titleArray[section] count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
@@ -85,6 +76,34 @@
     }
     return 0.01;
 }
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    if (section == 0) {
+        
+        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ExplainHeight)];
+        
+        view.backgroundColor = [UIColor whiteColor];
+        
+        UILabel *explain = [[UILabel alloc]initWithFrame:CGRectMake(8, 0, ScreenWidth - 16, ExplainHeight)];
+        
+        explain.textColor = [UIColor redColor];
+        
+        explain.numberOfLines = 0;
+        
+        explain.font = [UIFont systemFontOfSize:15];
+        
+        explain.text = @"提示:\n 1.为确保您的资金安全,请您设置手势密码;\n 2.为确保您能正常充值和提现,请您进行实名认证;\n 3.为确保您的资金安全,请你设置交易密码.";
+        
+        [view addSubview:explain];
+        
+        return view;
+        
+    }
+    
+    return 0;
+}
+
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
@@ -116,7 +135,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     if (section == 0) {
-        return 15;
+        return ExplainHeight;
     }
     return 10;
 }
@@ -179,22 +198,60 @@
             PUSH(gesture);
             
         }
+        
+        if (indexPath.row == 2) {
+            
+            //设置交易密码
+            SetPayPWViewController *pay = [[SetPayPWViewController alloc]init];
+            
+            PUSH(pay);
+            
+        }
+        
     }
     if (indexPath.section == 1) {
         
-        //判断是否实名认证
-        if ([self.autoStatus isEqualToString:@"3"]) {
+        if (indexPath.row == 0) {
             
-            [LCProgressHUD showMessage:@"您已经实名认证啦!"];
-            
-        }else{
-            
-            RealnameViewController *real = [[RealnameViewController alloc]init];
-            
-            PUSH(real);
+            //判断是否实名认证
+            if ([self.autoStatus isEqualToString:@"3"]) {
+                
+                [LCProgressHUD showMessage:@"您已经实名认证啦!"];
+                
+            }else{
+                
+                RealnameViewController *real = [[RealnameViewController alloc]init];
+                
+                PUSH(real);
+                
+            }
+
             
         }
-
+        
+        if (indexPath.row == 1) {
+            
+            //NSLog(@"_autenstatus === %@",_authenStatus);
+            
+            if (![UserDefaultGetValue(@"emailStatus") isEqualToString:@"1"]) {
+                
+                //邮箱验证
+                EmailAuthenViewController *authen = [[EmailAuthenViewController alloc]init];
+                
+                PUSH(authen);
+                
+            }else{
+                
+                [LCProgressHUD showMessage:@"您已邮箱认证!"];
+                
+            }
+                
+                
+            
+           
+            
+        }
+        
     }
 }
 

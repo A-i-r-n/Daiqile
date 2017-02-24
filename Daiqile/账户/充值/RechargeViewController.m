@@ -28,13 +28,36 @@
 //确认充值
 - (IBAction)rechageClick:(id)sender
 {
-    NSString *urlString = [ToolModel linkUrl:[NSString stringWithFormat:@"port/fuyoumobilepay.php?money=%@&type=1&payment1=80&user_id=%@",_moneyFild.text,UserDefaultGetValue(@"userId")]];
+    //检查是否绑定银行卡
+    [HttpManager sendPostRequestWithDictionary:@{@"user_id":UserDefaultGetValue(@"userId")} withUrl:@"port/getMobileCard3.php" Success:^(NSDictionary *responseData) {
+        
+        NSString *status = responseData[@"status"];
+        
+        if ([status isEqualToString:@"1"]) {
+            
+            //如果绑定就跳转到充值界面
+            NSString *urlString = [ToolModel linkUrl:[NSString stringWithFormat:@"port/fuyoumobilepay.php?money=%@&type=1&payment1=80&user_id=%@",_moneyFild.text,UserDefaultGetValue(@"userId")]];
+            NSLog(@"userid == %@",UserDefaultGetValue(@"userId"));
+            
+            fuyouRechargeViewController *fuyou = [[fuyouRechargeViewController alloc]init];
+            
+            fuyou.money = urlString;
+            
+            PUSH(fuyou);
+            
+        }else{
+            
+            [LCProgressHUD showMessage:@"您还未绑定银行卡!"];
+            
+        }
+        
+    } Failed:^(NSError *error) {
+        
+        [LCProgressHUD showMessage:@"网络请求出错,请联系管理员!"];
+        
+    }];
     
-    fuyouRechargeViewController *fuyou = [[fuyouRechargeViewController alloc]init];
     
-    fuyou.money = urlString;
-    
-    PUSH(fuyou);
     
 }
 

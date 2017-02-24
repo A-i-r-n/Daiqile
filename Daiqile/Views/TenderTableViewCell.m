@@ -13,7 +13,7 @@
 - (void)setModel:(TenderModel *)model
 {
     //投资人
-    _tenderName.text = [NSString stringWithFormat:@"%@***",[model.username substringToIndex:2]];
+    _tenderName.text = [NSString stringWithFormat:@"%@***",[model.username substringWithRange:NSMakeRange(0, 3)]];
     
     //年利率
     _apr.text = [NSString stringWithFormat:@"%@%%",model.apr];

@@ -77,55 +77,52 @@
     //_keyongjine.text = [NSString stringWithFormat:@"%.2f",model.account-model.account_yes];
     
     [_getCode addTarget:self action:@selector(getImgCode) forControlEvents:UIControlEventTouchUpInside];
-    
-    
+
     //倒计时
     NSDate *dateNow=[NSDate dateWithTimeIntervalSinceNow:0];
-    NSTimeInterval timeNow=[dateNow timeIntervalSince1970];
+    
+    NSTimeInterval timeNow = [dateNow timeIntervalSince1970];
+    
     NSString *strTimeNow=[NSString stringWithFormat:@"%.0f",timeNow];
+    
     NSInteger timeNow2 = [strTimeNow intValue];
-    if ([model.status isEqualToString:@"1"]) {
-        NSInteger endTime = [model.verify_time intValue] + ([model.valid_time intValue]*24*60*60)-timeNow2-86400;
-        //        NSLog(@"endTime====%ld",(long)endTime);
+    
+    NSInteger endTime = [model.verify_time intValue] + ([model.valid_time intValue]*24*60*60) - timeNow2 - 86400;
+    
+    _timer = [[MZTimerLabel alloc] initWithLabel:_end_timeLabel andTimerType:MZTimerLabelTypeTimer];
+    
+    [_timer setCountDownTime:endTime];
+    
+    [_timer start];
+    
+    if (endTime < 0) {
         
-        _timer = [[MZTimerLabel alloc] initWithLabel:_end_timeLabel andTimerType:MZTimerLabelTypeTimer];
-        [_timer setCountDownTime:endTime];
-        [_timer start];
+        _end_timeLabel.text = @"已到期";
         
-        if (endTime<0) {
-            //endTime = endTime+86400;
-            [_timer pause];
-            _end_timeLabel.text = @"已到期";
-            //_timer.text = @"已到期";
-            _liJiTouzi.enabled = NO;
-            [_liJiTouzi setTitle:@"已到期" forState:UIControlStateNormal];
-            _liJiTouzi.backgroundColor = [UIColor lightGrayColor];
-            [ToolModel setStatusbBarFontColor];
-            [_timer pause];
-            _timer = nil;
-        }
+        _liJiTouzi.enabled = NO;
         
+        [_liJiTouzi setTitle:@"已到期" forState:UIControlStateNormal];
         
+        _liJiTouzi.backgroundColor = [UIColor lightGrayColor];
         
+        [ToolModel setStatusbBarFontColor];
         
-    }else{
+        [_timer pause];
         
-        NSString *endTime = [NSString stringWithFormat:@"%@",model.end_time];
-        NSInteger end_time = [endTime intValue] - timeNow2 - 86400;
-        
-        if (end_time <= 0) {
-            _end_timeLabel.text = @"已到期";
-        }else{
-            [ToolModel setStatusbBarFontColor];
-            //        _endTime = end_time;
-            [_timer pause];
-            _timer = nil;
-            
-            _timer = [[MZTimerLabel alloc] initWithLabel:_end_timeLabel andTimerType:MZTimerLabelTypeTimer];
-            [_timer setCountDownTime:end_time];
-            [_timer start];
-        }
+        _timer = nil;
     }
+    
+    if (model.account_yes == model.account) {
+        
+        
+        _liJiTouzi.enabled = NO;
+        
+        [_liJiTouzi setTitle:@"正在还款" forState:UIControlStateNormal];
+        
+        _liJiTouzi.backgroundColor = [UIColor lightGrayColor];
+        
+    }
+    
     
     //判断是否为新手标
     if ([model.is_ti isEqualToString:@"1"]) {

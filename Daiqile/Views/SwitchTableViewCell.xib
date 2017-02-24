@@ -46,7 +46,6 @@
                     <constraint firstItem="dDA-Q5-3Fb" firstAttribute="leading" secondItem="Ef5-xb-cWw" secondAttribute="trailing" constant="8" id="pX0-7b-hyR"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1764705882" alpha="0.21149209099999999" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
                 <outlet property="img" destination="Ef5-xb-cWw" id="MQU-JL-Vg9"/>
                 <outlet property="swithBtn" destination="Zm9-QA-wtW" id="ImI-wq-IB4"/>

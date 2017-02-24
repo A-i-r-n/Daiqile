@@ -32,7 +32,7 @@
     
     scrollView = [[UIScrollView alloc] init];
     
-    scrollView.frame = CGRectMake(0, 0, ScreenWidth , ScreenHeight - 64);
+    scrollView.frame = CGRectMake(0, 0, ScreenWidth , ScreenHeight);
     
     scrollView.showsHorizontalScrollIndicator = NO;
 

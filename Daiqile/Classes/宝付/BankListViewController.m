@@ -116,7 +116,7 @@
         UITableViewCell *cell = [tableView  cellForRowAtIndexPath:indexPath];
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
         // 保存选中的
-        _index = [NSString stringWithFormat:@"%ld",indexPath.row];
+        _index = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
         
         NSString *bankName = [self.listArr[indexPath.row] objectForKey:@"bankName"];
         

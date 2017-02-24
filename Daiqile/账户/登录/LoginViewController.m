@@ -11,7 +11,7 @@
 #import "RegistViewController.h"
 #import "AirTextField.h"
 #import "MainViewController.h"
-@interface LoginViewController ()
+@interface LoginViewController ()<UITextFieldDelegate>
 {
     NSDictionary *_params;
 }
@@ -22,7 +22,7 @@
 @property (nonatomic,assign) BOOL          isRemenber;//是否记住密码
 - (IBAction)LoginClick:(id)sender;
 - (IBAction)goRegist:(id)sender;
-- (IBAction)forgetPassWord:(id)sender;
+//- (IBAction)forgetPassWord:(id)sender;
 
 @end
 
@@ -30,7 +30,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     
     self.navigationItem.title = @"登录";
     
@@ -40,26 +39,29 @@
     
 }
 
-//读取用户名密码
+//读取用户名,密码
 - (void)readUserInfo
 {
     //读取用户名密码
     NSUserDefaults *userDefaultsInfo = [NSUserDefaults standardUserDefaults];
     
     NSString *state = [userDefaultsInfo stringForKey:@"rememberstate"];
+    
     if ([state isEqualToString:@"1"]) {
+        
         _userName.text = [userDefaultsInfo stringForKey:@"userName"];
+        
         _password.text = [userDefaultsInfo stringForKey:@"logPassword"];
         
         _isRemenber = YES;
-         [_saveBtn setImage:[UIImage imageNamed:@"btn_check_box_on.png"] forState:UIControlStateNormal];
         
-//        _loginBtn.enabled = YES;
-//        _loginBtn.backgroundColor = TABCOLOR;
+         [_saveBtn setImage:[UIImage imageNamed:@"btn_check_box_on.png"] forState:UIControlStateNormal];
         
     }else{
         _userName.text = @"";
+        
         _password.text = @"";
+        
         _isRemenber = NO;
         
         [_saveBtn setImage:[UIImage imageNamed:@"btn_check_box_off.png"] forState:UIControlStateNormal];
@@ -80,6 +82,7 @@
 - (IBAction)LoginClick:(id)sender
 {
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    
    //判断是否记住密码
     if (_isRemenber == NO) {
         
@@ -100,6 +103,8 @@
     
     _params = @{@"username":_userName.text,@"password": _password.text};
     [HttpManager sendPostRequestWithDictionary:_params withUrl:@"port/login.php" Success:^(NSDictionary *responseData) {
+        
+        //NSLog(@"login === %@",responseData);
         
         NSString *status = [responseData objectForKey:@"status"];
         
@@ -151,11 +156,11 @@
     PUSH(regist);
 }
 
-//忘记密码
-- (IBAction)forgetPassWord:(id)sender
-{
-    
-}
+////忘记密码
+//- (IBAction)forgetPassWord:(id)sender
+//{
+//    
+//}
 
 //记住密码
 - (IBAction)rememberBtn:(id)sender
@@ -189,8 +194,13 @@
     [self.view endEditing:YES];
 }
 
-
-
+//点击回车收回键盘
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField endEditing:YES];
+    
+    return YES;
+}
 
 
 @end

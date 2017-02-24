@@ -64,6 +64,12 @@
 		BC4852FB1DD967650045A205 /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4852F91DD967650045A205 /* AccountViewController.xib */; };
 		BC4853001DDAB6010045A205 /* InvestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4852FE1DDAB6010045A205 /* InvestTableViewCell.m */; };
 		BC4853011DDAB6010045A205 /* InvestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4852FF1DDAB6010045A205 /* InvestTableViewCell.xib */; };
+		BC59398A1E5D6DC20030D402 /* SetPayPWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5939881E5D6DC20030D402 /* SetPayPWViewController.m */; };
+		BC59398B1E5D6DC20030D402 /* SetPayPWViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5939891E5D6DC20030D402 /* SetPayPWViewController.xib */; };
+		BC59398F1E5D6E030030D402 /* EmailAuthenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC59398D1E5D6E030030D402 /* EmailAuthenViewController.m */; };
+		BC5939901E5D6E030030D402 /* EmailAuthenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC59398E1E5D6E030030D402 /* EmailAuthenViewController.xib */; };
+		BC5939B11E5FDF770030D402 /* UserDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5939AF1E5FDF770030D402 /* UserDelegateViewController.m */; };
+		BC5939B21E5FDF770030D402 /* UserDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5939B01E5FDF770030D402 /* UserDelegateViewController.xib */; };
 		BC629A041E52B57200BE871F /* RealnameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC629A021E52B57200BE871F /* RealnameViewController.m */; };
 		BC629A051E52B57200BE871F /* RealnameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC629A031E52B57200BE871F /* RealnameViewController.xib */; };
 		BC629A0A1E52E3C300BE871F /* InvestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC629A091E52E3C300BE871F /* InvestModel.m */; };
@@ -279,6 +285,15 @@
 		BC4852FD1DDAB6010045A205 /* InvestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvestTableViewCell.h; sourceTree = "<group>"; };
 		BC4852FE1DDAB6010045A205 /* InvestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvestTableViewCell.m; sourceTree = "<group>"; };
 		BC4852FF1DDAB6010045A205 /* InvestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestTableViewCell.xib; sourceTree = "<group>"; };
+		BC5939871E5D6DC20030D402 /* SetPayPWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetPayPWViewController.h; sourceTree = "<group>"; };
+		BC5939881E5D6DC20030D402 /* SetPayPWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetPayPWViewController.m; sourceTree = "<group>"; };
+		BC5939891E5D6DC20030D402 /* SetPayPWViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetPayPWViewController.xib; sourceTree = "<group>"; };
+		BC59398C1E5D6E030030D402 /* EmailAuthenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailAuthenViewController.h; sourceTree = "<group>"; };
+		BC59398D1E5D6E030030D402 /* EmailAuthenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailAuthenViewController.m; sourceTree = "<group>"; };
+		BC59398E1E5D6E030030D402 /* EmailAuthenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmailAuthenViewController.xib; sourceTree = "<group>"; };
+		BC5939AE1E5FDF770030D402 /* UserDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDelegateViewController.h; sourceTree = "<group>"; };
+		BC5939AF1E5FDF770030D402 /* UserDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDelegateViewController.m; sourceTree = "<group>"; };
+		BC5939B01E5FDF770030D402 /* UserDelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDelegateViewController.xib; sourceTree = "<group>"; };
 		BC629A011E52B57200BE871F /* RealnameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealnameViewController.h; sourceTree = "<group>"; };
 		BC629A021E52B57200BE871F /* RealnameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealnameViewController.m; sourceTree = "<group>"; };
 		BC629A031E52B57200BE871F /* RealnameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RealnameViewController.xib; sourceTree = "<group>"; };
@@ -627,6 +642,7 @@
 				BC7988E01DDC57CC00433105 /* 安全中心 */,
 				BC7988B91DDC2B7000433105 /* 登录 */,
 				BC7988BA1DDC2B7000433105 /* 注册 */,
+				BC5939AD1E5FDF540030D402 /* 注册协议 */,
 			);
 			path = "账户";
 			sourceTree = "<group>";
@@ -846,6 +862,37 @@
 				BC68FE021E4C3BFA00CB6DFD /* RepayTableViewCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BC5939851E5D6D580030D402 /* 设置交易密码 */ = {
+			isa = PBXGroup;
+			children = (
+				BC5939871E5D6DC20030D402 /* SetPayPWViewController.h */,
+				BC5939881E5D6DC20030D402 /* SetPayPWViewController.m */,
+				BC5939891E5D6DC20030D402 /* SetPayPWViewController.xib */,
+			);
+			path = "设置交易密码";
+			sourceTree = "<group>";
+		};
+		BC5939861E5D6D6C0030D402 /* 邮箱认证 */ = {
+			isa = PBXGroup;
+			children = (
+				BC59398C1E5D6E030030D402 /* EmailAuthenViewController.h */,
+				BC59398D1E5D6E030030D402 /* EmailAuthenViewController.m */,
+				BC59398E1E5D6E030030D402 /* EmailAuthenViewController.xib */,
+			);
+			path = "邮箱认证";
+			sourceTree = "<group>";
+		};
+		BC5939AD1E5FDF540030D402 /* 注册协议 */ = {
+			isa = PBXGroup;
+			children = (
+				BC5939AE1E5FDF770030D402 /* UserDelegateViewController.h */,
+				BC5939AF1E5FDF770030D402 /* UserDelegateViewController.m */,
+				BC5939B01E5FDF770030D402 /* UserDelegateViewController.xib */,
+			);
+			name = "注册协议";
+			path = "注册/注册协议";
 			sourceTree = "<group>";
 		};
 		BC629A001E52B51100BE871F /* 实名认证 */ = {
@@ -1121,7 +1168,9 @@
 				BC7989111DDC5C2A00433105 /* SafityViewController.xib */,
 				BC629A0E1E52FC6500BE871F /* 修改登录密码 */,
 				BC629A0F1E52FC7200BE871F /* 修改手势密码 */,
+				BC5939851E5D6D580030D402 /* 设置交易密码 */,
 				BC629A001E52B51100BE871F /* 实名认证 */,
+				BC5939861E5D6D6C0030D402 /* 邮箱认证 */,
 			);
 			path = "安全中心";
 			sourceTree = "<group>";
@@ -1323,6 +1372,7 @@
 				BC10FDCF1DD9532A007414D3 /* LaunchScreen.storyboard in Resources */,
 				BC68FDFF1E4C3BEA00CB6DFD /* TenderTableViewCell.xib in Resources */,
 				BC4852F61DD9674C0045A205 /* MoreViewController.xib in Resources */,
+				BC59398B1E5D6DC20030D402 /* SetPayPWViewController.xib in Resources */,
 				BC4853011DDAB6010045A205 /* InvestTableViewCell.xib in Resources */,
 				BC37236F1E54447100C3BAFA /* RollMoneyViewController.xib in Resources */,
 				BC2C26101E517D7F00AE11D1 /* bankList.plist in Resources */,
@@ -1351,7 +1401,9 @@
 				BC7988C91DDC2C0F00433105 /* LoginViewController.xib in Resources */,
 				BC68FD8E1E4AECF800CB6DFD /* StoreTableViewCell.xib in Resources */,
 				BC3723671E5420D400C3BAFA /* ChangeMoneyViewController.xib in Resources */,
+				BC5939901E5D6E030030D402 /* EmailAuthenViewController.xib in Resources */,
 				BC629A191E52FCC200BE871F /* ChangeGestureViewController.xib in Resources */,
+				BC5939B21E5FDF770030D402 /* UserDelegateViewController.xib in Resources */,
 				BC7989131DDC5C2A00433105 /* SafityViewController.xib in Resources */,
 				BC68FDF51E4C367200CB6DFD /* TenderRecordViewController.xib in Resources */,
 				BC68FD9A1E4AFEE800CB6DFD /* LCProgressHUD.bundle in Resources */,
@@ -1461,6 +1513,7 @@
 				BC2C26141E517D7F00AE11D1 /* RequestManager.m in Sources */,
 				BC68FDD31E4B1C5800CB6DFD /* BtnView.m in Sources */,
 				BC629A131E52FCAC00BE871F /* ChangePWViewController.m in Sources */,
+				BC5939B11E5FDF770030D402 /* UserDelegateViewController.m in Sources */,
 				BC6AB3071DDD821800740584 /* InvestRecordViewController.m in Sources */,
 				BC68FDF91E4C379E00CB6DFD /* RepayDetailViewController.m in Sources */,
 				BC68FE0D1E4D612F00CB6DFD /* AccountModel.m in Sources */,
@@ -1470,10 +1523,12 @@
 				BC0290E31E485AB500C347CB /* ArcView.m in Sources */,
 				BC6AB3021DDD81FB00740584 /* GetMoneyViewController.m in Sources */,
 				BC3723231E53EE1300C3BAFA /* RecommendToFriendsViewController.m in Sources */,
+				BC59398F1E5D6E030030D402 /* EmailAuthenViewController.m in Sources */,
 				BCA0F46D1DDE955400D0160A /* MyInvestTableViewCell.m in Sources */,
 				BC3723271E53F5B800C3BAFA /* GestureViewController.m in Sources */,
 				BC6AB2F41DDD789900740584 /* ZJScrollSegmentView.m in Sources */,
 				BC629A0A1E52E3C300BE871F /* InvestModel.m in Sources */,
+				BC59398A1E5D6DC20030D402 /* SetPayPWViewController.m in Sources */,
 				BC68FE301E4D99F100CB6DFD /* D3Generator.m in Sources */,
 				BC7988D91DDC4C9300433105 /* PlatformStateViewController.m in Sources */,
 				BC7989121DDC5C2A00433105 /* SafityViewController.m in Sources */,
@@ -1689,7 +1744,7 @@
 				GCC_PREFIX_HEADER = Daiqile/PrefixHeader.pch;
 				INFOPLIST_FILE = Daiqile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = dql.Daiqile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JZ.Daiqile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1709,7 +1764,7 @@
 				GCC_PREFIX_HEADER = Daiqile/PrefixHeader.pch;
 				INFOPLIST_FILE = Daiqile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = dql.Daiqile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JZ.Daiqile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

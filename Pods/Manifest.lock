@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - IQKeyboardManager (4.0.6)
   - Masonry (1.0.2)
   - MJRefresh (3.1.12)
   - SDCycleScrollView (1.65):
@@ -24,17 +25,19 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - IQKeyboardManager
   - Masonry (~> 1.0.2)
   - MJRefresh (~> 3.1.12)
   - SDCycleScrollView (~> 1.65)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  IQKeyboardManager: c52debb1967799ae7addb98eab0cf328083a874f
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
 
-PODFILE CHECKSUM: 9200d0269ec7e7810d76ffac95efcad9de32c07a
+PODFILE CHECKSUM: 8a2e99158057beae7d7ae2dd4ae684c5ba502431
 
 COCOAPODS: 1.1.1

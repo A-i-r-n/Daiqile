@@ -29,6 +29,7 @@
 //实名认证
 - (IBAction)goAutho:(id)sender
 {
+    UIButton *button = (UIButton *)sender;
     
     if ([_realname.text isEqualToString:@""] || [_idCard.text isEqualToString:@""]) {
         
@@ -54,17 +55,41 @@
                 
                 [LCProgressHUD showMessage:@"提交成功,请等待审核!"];
                 
+                button.backgroundColor = [UIColor lightGrayColor];
+                
+                button.enabled = NO;
+                
+                POPViewController;
+                
             }else if ([status isEqualToString:@"2"]){
                 
                 [LCProgressHUD showMessage:@"正在审核,请耐心等待!"];
+                
+                button.backgroundColor = [UIColor lightGrayColor];
+                
+                button.enabled = NO;
+                
+                POPViewController;
                 
             }else if ([status isEqualToString:@"3"]){
                 
                 [LCProgressHUD showMessage:@"您已经实名认证啦!"];
                 
+                button.backgroundColor = [UIColor lightGrayColor];
+                
+                button.enabled = NO;
+                
+                POPViewController;
+                
             }else if ([status isEqualToString:@"4"]){
                 
                 [LCProgressHUD showMessage:@"正在审核,请不要重复提交!"];
+                
+                button.backgroundColor = [UIColor lightGrayColor];
+                
+                button.enabled = NO;
+                
+                POPViewController;
                 
             }else if ([status isEqualToString:@"0"]){
                 

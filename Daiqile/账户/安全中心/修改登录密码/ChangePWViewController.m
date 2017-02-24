@@ -39,6 +39,7 @@
                 [LCProgressHUD showMessage:@"原密码不正确!"];
                 
             }else if ([status isEqualToString:@"1"]){
+                
                 [LCProgressHUD showMessage:@"密码修改成功,请重新登录!"];
                 
                 //移除登录状态

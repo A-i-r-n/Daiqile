@@ -41,7 +41,7 @@
     while([scanner isAtEnd]==NO)
     {
         //找到标签的起始位置
-        [scanner scanUpToString:@"<img alt='' src='" intoString:nil];
+        [scanner scanUpToString:@"<img " intoString:nil];
         //找到标签的结束位置
         [scanner scanUpToString:@"/plugins" intoString:&text];
         //替换字符

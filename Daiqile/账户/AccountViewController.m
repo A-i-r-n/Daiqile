@@ -38,11 +38,11 @@
 }
 @property (strong, nonatomic) IBOutlet UIButton *headImgBtn;//选择头像按钮
 @property (strong, nonatomic) IBOutlet UILabel *userName;//用户名
-@property (strong, nonatomic) IBOutlet UIImageView *casteImg;//等级图片
+//@property (strong, nonatomic) IBOutlet UIImageView *casteImg;//等级图片
 @property (strong, nonatomic) IBOutlet UIButton *goAuthentication;//去认证
 @property (strong, nonatomic) IBOutlet UILabel *allMoney;//账户总额
 @property (strong, nonatomic) IBOutlet UILabel *usableMoney;//可用余额
-@property (strong, nonatomic) IBOutlet UILabel *cannotUseMoney;//冻结金额
+@property (strong, nonatomic) IBOutlet UILabel *chargeMoney;//零钱包昨日收益
 
 
 
@@ -61,6 +61,7 @@
     self.navigationItem.title = @"账户";
     
     _btnTitleArray = @[@"待收记录",@"我的投资",@"零钱包",@"绑定银行卡",@"推荐好友",@"安全中心"];
+    
     _btnImgArray = @[@"icon_user_record",@"icon_user_invest",@"icon_user_redpackets",@"icon_user_card",@"icon_user_recommend",@"icon_user_safety"];
     
     //创建下部(交易记录,我的投资)等按钮
@@ -69,8 +70,6 @@
     //该页面所有点击事件
     [self allClickAction];
     
-    //检查用户是否已经实名认证
-    [self checkUser];
 
 }
 
@@ -78,6 +77,8 @@
 {
     [super viewWillAppear:animated];
     
+    //检查用户是否已经实名认证
+    [self checkUser];
     
     //发送网络请求,获取用户信息
     [self sendHttpRequest];
@@ -167,6 +168,7 @@
         
         NSDictionary *params = @{@"user_id":UserDefaultGetValue(@"userId")};
         
+        //判断是否已经绑定银行卡
         [HttpManager sendPostRequestWithDictionary:params withUrl:@"port/getMobileCard3.php" Success:^(NSDictionary *responseData) {
             
             NSString *status = responseData[@"status"];
@@ -179,9 +181,7 @@
                 
             }else{
                 
-                BindCardViewController *bind = [[BindCardViewController alloc]init];
-                
-                PUSH(bind);
+                [LCProgressHUD showMessage:@"您还未绑定银行卡,请先绑定银行卡!"];
                 
             }
             
@@ -206,6 +206,11 @@
         NSDictionary *parameters=@{@"user_id":UserDefaultGetValue(@"userId")};
         
         [HttpManager sendPostRequestWithDictionary:parameters withUrl:@"port/checkuser.php" Success:^(NSDictionary *responseData) {
+            
+            //NSLog(@"login === %@",responseData);
+            
+            //用来判断邮箱是否认证
+            UserDefaultSetValue(responseData[@"email_status"], @"emailStatus");
             
             _status = [responseData objectForKey:@"status"];
             
@@ -253,6 +258,8 @@
         //获取用户信息
         [HttpManager sendGetRequestWithDictionary:nil withUrl:[NSString stringWithFormat:@"port/getUserLog.php?user_id=%@",UserDefaultGetValue(@"userId")] Success:^(NSDictionary *responseData) {
             
+            //NSLog(@"account === %@",responseData);
+            
             model = [AccountModel new];
             
             [model setValuesForKeysWithDictionary:responseData];
@@ -268,8 +275,9 @@
             
             _usableMoney.text = model.use_money;
             
-            _cannotUseMoney.text = model.no_use_money;
+            //_cannotUseMoney.text = model.no_use_money;
             
+            _chargeMoney.text = model.fund;
             
         } Failed:^(NSError *error) {
             
@@ -282,7 +290,7 @@
         
         _usableMoney.text = @"0.00";
         
-        _cannotUseMoney.text = @"0.00";
+        _chargeMoney.text = @"0.00";
         
     }
 
@@ -293,9 +301,20 @@
 - (void)headBtnClick:(UIButton *)button
 {
     if (!LOGINSTATUS) {
+        
         LoginViewController *login = [[LoginViewController alloc]init];
         
         PUSH(login);
+        
+    }else{
+        
+        //安全中心
+        SafityViewController *safe = [[SafityViewController alloc]init];
+        
+        safe.autoStatus = _status;
+        
+        PUSH(safe);
+        
     }
 }
 

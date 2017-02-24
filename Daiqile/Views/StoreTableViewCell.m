@@ -53,6 +53,16 @@
     _count.text = [NSString stringWithFormat:@"¥ %.2f",model.account];
     
     [_bgImg sd_setImageWithURL:[NSURL URLWithString:[ToolModel linkUrl:model.project_pic2]] placeholderImage:[UIImage imageNamed:@""]];
+    
+    if (model.account == model.account_yes) {
+        
+        [_buyClick setTitle:@"已满标" forState:UIControlStateNormal];
+        
+        _buyClick.backgroundColor = [UIColor lightGrayColor];
+        
+    }
+    
+    
 }
 
 

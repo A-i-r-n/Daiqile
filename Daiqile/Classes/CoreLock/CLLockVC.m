@@ -12,8 +12,8 @@
 #import "CLLockLabel.h"
 #import "CLLockNavVC.h"
 #import "CLLockView.h"
-
-
+#import "SafityViewController.h"
+#import "AppDelegate.h"
 
 @interface CLLockVC ()
 
@@ -40,7 +40,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *modifyBtn;
 
-
+@property (weak, nonatomic) CLLockNavVC *navigation;
 
 /** 直接进入修改页面的 */
 @property (nonatomic,assign) BOOL isDirectModify;
@@ -248,7 +248,11 @@
 }
 
 -(void)dismiss{
+    
     [self dismiss:0];
+    
+     [((AppDelegate *)[UIApplication sharedApplication].delegate) setupTabBar];
+
 }
 
 
@@ -379,7 +383,6 @@
     CLLockNavVC *navVC = [[CLLockNavVC alloc] initWithRootViewController:lockVC];
     
     [vc presentViewController:navVC animated:YES completion:nil];
-
     
     return lockVC;
 }

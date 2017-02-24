@@ -48,7 +48,6 @@
                     <constraint firstAttribute="trailing" secondItem="Es4-Ah-5OW" secondAttribute="trailing" constant="8" id="uDt-lk-Hlr"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1764705882" alpha="0.21149209099999999" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
                 <outlet property="content" destination="Es4-Ah-5OW" id="Lw8-OH-n8P"/>
                 <outlet property="img" destination="QgP-Mz-CRb" id="VuF-4F-9pu"/>

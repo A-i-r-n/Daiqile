@@ -21,7 +21,7 @@
 
 #define BiaoTouCell @"BiaoTouTableViewCell"
 
-@interface DetailViewController ()
+@interface DetailViewController ()<UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
@@ -130,6 +130,15 @@
     repay.model = self.model;
     
     PUSH(repay);
+}
+
+
+//输入框处于编辑状态
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+   
+    
 }
 
 
